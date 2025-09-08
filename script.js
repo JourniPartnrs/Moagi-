@@ -1,12 +1,21 @@
 // Mobile menu toggle
-const menuBtn = document.querySelector('.menu-btn');
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
-if (menuBtn) {
-  menuBtn.addEventListener('click', () => {
-    const open = mobileMenu.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+
+if (mobileMenuToggle) {
+  mobileMenuToggle.addEventListener('change', () => {
+    mobileMenu.classList.toggle('open', mobileMenuToggle.checked);
   });
 }
+
+// Close mobile menu when a link is clicked
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    mobileMenuToggle.checked = false; // Uncheck the checkbox
+  });
+});
 
 // Hero Slider Logic
 const slidesEl = document.getElementById('slides');
@@ -85,8 +94,15 @@ function goTestimonials(i) {
   indexTestimonials = (i + slidesTestimonials.length) % slidesTestimonials.length;
   slidesTestimonialsEl.style.transform = `translateX(-${indexTestimonials * 100}%)`;
   [...dotsTestimonialsEl.children].forEach((d, di) => d.classList.toggle('active', di === indexTestimonials));
-  restartTestimonials(); // Restart the timer
-}
+  restartTestimonials();
+  // Restart the timer
+}document.getElementById('prevTestimonial').addEventListener('click', () => {
+  goTestimonials(indexTestimonials - 1);
+});
+
+document.getElementById('nextTestimonial').addEventListener('click', () => {
+  goTestimonials(indexTestimonials + 1);
+});
 
 function startTestimonials() {
   timerTestimonials = setInterval(() => goTestimonials(indexTestimonials + 1), 7000);
@@ -141,26 +157,6 @@ function animateCounters() {
     requestAnimationFrame(step);
   });
 }
-
-// Single-page navigation logic
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const targetId = this.getAttribute('href');
-    const targetSection = document.querySelector(targetId);
-
-    if (targetSection) {
-      e.preventDefault();
-      const allSections = document.querySelectorAll('.page-section');
-      allSections.forEach(section => section.classList.remove('active'));
-      targetSection.classList.add('active');
-
-      window.scrollTo({
-        top: targetSection.offsetTop,
-        behavior: 'smooth'
-      });
-    }
-  });
-});
 
 // Handle initial page load
 window.addEventListener('load', () => {

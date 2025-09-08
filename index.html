@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-wUYgk8hS1l3t8sP5JQm1T8s-3g8P2r1o0e8j3gF2yHc2r1pVhY1b5e3c1kU8GQxJm2wHn6V7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,6 +44,7 @@
   }
   </script>
   
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -51,29 +53,32 @@
       <div class="container nav">
         <div class="brand">
           <a href="#home-page">
-            <img src="img/logo.png" alt="My Company Logo" width="300" height="150">
+            <img src="img/logo.png" alt="My Company Logo" width="400" height="150">
           </a>
         </div>
         <nav aria-label="Primary">
           <ul>
             <li><a href="#home-page">Home</a></li>
-            <li><a href="#services-page">Services</a></li>
-            <li><a href="#why-us-page">Why Choose Us</a></li>
-            <li><a href="#testimonials-section">Testimonials</a></li>
-            <li><a href="#blog-section">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#services-section">Services</a></li>
             <li><a href="#contact-section">Contact</a></li>
+            <li><a href="#blog-section">Blog</a></li>
           </ul>
         </nav>
-        <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu"><i class="fa-solid fa-bars"></i> Menu</button>
+        <label for="mobileMenuToggle" class="toggle menu-btn" aria-expanded="false" aria-controls="mobileMenu">
+          <input type="checkbox" id="mobileMenuToggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
       </div>
       <div id="mobileMenu" class="mobile-menu" role="dialog" aria-label="Mobile menu">
         <a href="#home-page">Home</a>
-        <a href="#services-page">Services</a>
-        <a href="#why-us-page">Why Choose Us</a>
-        <a href="#testimonials-section">Testimonials</a>
-        <a href="#blog-section">Blog</a>
+        <a href="about.html">About Us</a>
+         <a href="#services-section">Services</a>
         <a href="#contact-section">Contact</a>
-        <a class="cta" href="#contact-section" style="background:var(--yellow);margin:10px;border-radius:12px;text-align:center;font-weight:800;color:#111;padding:12px 14px">Book a Free Consultation</a>
+        <a href="#blog-section">Blog</a>
+        <a class="cta" href="#contact-section" style="background:var(--yellow);margin:10px;border-radius:12px;text-align:center;font-weight:800;color:white;padding:12px 14px">Book a Free Consultation</a>
       </div>
     </header>
   
@@ -90,7 +95,7 @@
                 <p class="sub">End‑to‑end payroll processing, payslips, SARS submissions, UIF & COIDA assistance – done right and on schedule in South Africa.</p>
                 <div class="cta-row">
                   <a href="#contact-section" class="btn primary"><i class="fa-solid fa-calendar-check"></i> Book a Free Consultation</a>
-                  <a href="#services-page" class="btn ghost"><i class="fa-solid fa-list-check"></i> View Services</a>
+                  <a href="#services-section" class="btn ghost"><i class="fa-solid fa-list-check"></i> View Services</a>
                 </div>
               </div>
             </div>
@@ -119,7 +124,7 @@
                 <h2 class="headline">Compliance Made Simple for SMEs & Growing Teams</h2>
                 <p class="sub">UIF registrations, COIDA returns, Employment Equity returns, and customisable payroll reporting.</p>
                 <div class="cta-row">
-                  <a href="#services-page" class="btn primary"><i class="fa-solid fa-file-signature"></i> See Compliance Services</a>
+                  <a href="#services-section" class="btn primary"><i class="fa-solid fa-file-signature"></i> See Compliance Services</a>
                   <a href="#contact-section" class="btn ghost"><i class="fa-solid fa-paper-plane"></i> Talk to a Specialist</a>
                 </div>
               </div>
@@ -154,49 +159,56 @@
         </div>
       </section>  
       
-      <section id="services-section">
+      <section id="services-section" style="background:linear-gradient(180deg,#fff,#f8fafc)">
         <div class="container">
           <div class="section-head">
-            <span class="pill"><i class="fa-solid fa-briefcase"></i> Our Services</span>
+            <span class="pill"><i class="fa fa-briefcase"></i> Our Services</span>
             <h2>Comprehensive Payroll & Tax Compliance Services</h2>
-            <p>Comprehensive support covering payroll processing, payslips, SARS submissions, UIF, COIDA, Employment Equity returns and more, specifically for businesses in South Africa.</p>
+            <p>We offer a complete suite of services designed to simplify your payroll administration and ensure you are always compliant</p>
+            
           </div>
           <div class="grid grid-3">
             <article class="card">
-              <i class="fa-solid fa-calculator"></i>
-              <h3>Payroll Processing</h3>
-              <p>Accurate and timely salary calculations, deductions and payments with compliant records.</p>
-              <a href="#services-page" class="btn primary" style="margin-top:12px">Learn More</a>
+              <i class="fa fa-file-invoice-dollar"></i>
+              <h3>Payroll Administration</h3>
+              <p>We ensure timely and accurate salary payments, tax deductions, and full compliance with all labor laws.</p>
+              <a href="payroll-admin.html" class="btn primary" style="margin-top:12px">Learn More</a>
             </article>
             <article class="card">
-              <i class="fa-solid fa-file-invoice-dollar"></i>
-              <h3>Payslips</h3>
-              <p>Detailed, compliant payslips delivered securely to each employee every pay cycle.</p>
-              <a href="#services-page" class="btn primary" style="margin-top:12px">Learn More</a>
+              <i class="fa fa-archive"></i>
+              <h3>Payslip Management</h3>
+              <p>Provide your employees with accurate and detailed payslips at the end of each pay period, every time.</p>
+              <a href="payslip.html" class="btn primary" style="margin-top:12px">Learn More</a>
             </article>
             <article class="card">
-              <i class="fa-solid fa-file-circle-check"></i>
-              <h3>SARS Tax Year End</h3>
-              <p>Balancing August & February submissions and issuing IRP5s to employees.</p>
-              <a href="#services-page" class="btn primary" style="margin-top:12px">Learn More</a>
+              <i class="fa fa-calendar [&#xf073;]"></i>
+              <h3>Leave Management</h3>
+              <p>Our team maintains all leave records, tracks leave taken, and calculates monthly entitlements for a seamless process.</p>
+              <a href="leave.html" class="btn primary" style="margin-top:12px">Learn More</a>
             </article>
             <article class="card">
-              <i class="fa-solid fa-people-group"></i>
-              <h3>Employment Equity Returns</h3>
-              <p>Ensure accurate annual EE returns with the right information compiled and filed.</p>
-              <a href="#services-page" class="btn primary" style="margin-top:12px">Learn More</a>
-            </article>
-            <article class="card">
-              <i class="fa-solid fa-heart-pulse"></i>
+              <i class="fa fa-heart-pulse"></i>
               <h3>COIDA Returns</h3>
-              <p>Annual COIDA returns for Letters of Good Standing and ongoing compliance.</p>
-              <a href="#services-page" class="btn primary" style="margin-top:12px">Learn More</a>
+              <p>We handle the completion and submission of your annual COIDA returns to ensure you receive your Letter of Good Standing</p>
+              <a href="coida.html" class="btn primary" style="margin-top:12px">Learn More</a>
             </article>
             <article class="card">
-              <i class="fa-solid fa-umbrella"></i>
-              <h3>UIF (Registration & Calculations)</h3>
-              <p>Registration for new clients and accurate UIF calculations based on taxable earnings.</p>
-              <a href="#services-page" class="btn primary" style="margin-top:12px">Learn More</a>
+              <i class="fa fa-chart-line"></i>
+              <h3>SARS Tax Submissions</h3>
+              <p>We manage all SARS tax submissions, including tax year-end reconciliations and the issuing of annual IRP5s.</p>
+              <a href="sars.html" class="btn primary" style="margin-top:12px">Learn More</a>
+            </article>
+            <article class="card">
+              <i class="fa fa-umbrella"></i>
+              <h3>UIF Returns</h3>
+              <p>We manage your UIF registration and calculate and submit returns for your employees based on their earnings.</p>
+              <a href="uif.html" class="btn primary" style="margin-top:12px">Learn More</a>
+            </article>
+            <article class="card">
+              <i class="fa fa-people-arrows-left-right"></i>
+              <h3>Employment Equity Returns</h3>
+              <p>We assist you in preparing all the necessary payroll information for your annual EE Returns.</p>
+              <a href="ee-returns.html" class="btn primary" style="margin-top:12px">Learn More</a>
             </article>
           </div>
         </div>
@@ -206,86 +218,90 @@
         <div class="container">
           <div class="section-head">
             <span class="pill"><i class="fa-solid fa-circle-check"></i> Why Choose Us</span>
-            <h2>Accuracy, Compliance & Dedicated Support</h2>
-            <p>Streamlined processes, industry-specific expertise and responsive support that keeps your team paid and your business compliant.</p>
+            <h2>We transform your payroll from a headache into a hassle-free, accurate, and secure process</h2>
+            <p>Here’s how we add value to your business:</p>
           </div>
           <div class="grid grid-3">
             <article class="card">
               <h3>Increased Accuracy & Compliance</h3>
-              <p>Eliminate payroll and tax filing errors with reliable checks and reconciliations.</p>
-              <a href="#why-us-page" class="btn primary" style="margin-top:12px">Learn More</a>
-            </article>
+              <p>Say goodbye to the risk of costly errors. Our meticulous process and industry expertise ensure every payroll calculation and tax filing is accurate and fully compliant with regulations..</p>
+              </article>
             <article class="card">
               <h3>Reduced Admin Burden</h3>
-              <p>We take care of payroll admin so you can focus on your core business.</p>
-              <a href="#why-us-page" class="btn primary" style="margin-top:12px">Learn More</a>
-            </article>
+              <p>Free up your valuable time and resources. We handle the complexities of payroll so you and your team can focus on what you do best—growing your business.</p>
+              </article>
             <article class="card">
               <h3>Enhanced Employee Satisfaction</h3>
-              <p>On‑time payments and easy access to payslips for your staff.</p>
-              <a href="#why-us-page" class="btn primary" style="margin-top:12px">Learn More</a>
-            </article>
+              <p>Our seamless process ensures your employees are paid on time, every time, with easy access to their payslips. A happy workforce is a productive one.</p>
+              </article>
             <article class="card">
-              <i class="fa-solid fa-gears"></i>
-              <h3>Improved Efficiency</h3>
-              <p>Automated processes and reporting to streamline your operations.</p>
-              <a href="#why-us-page" class="btn primary" style="margin-top:12px">Learn More</a>
-            </article>
+              <i class="fa fa-gears"></i>
+              <h3>Streamlined Efficiency</h3>
+              <p>We leverage the secure, automated SAGE payroll system to create a streamlined, efficient, and reliable process</p>
+              </article>
             <article class="card">
-              <i class="fa-solid fa-chart-line"></i>
-              <h3>Customisable Reporting</h3>
-              <p>Get the numbers you need in formats management understands.</p>
-              <a href="#why-us-page" class="btn primary" style="margin-top:12px">Learn More</a>
-            </article>
+              <i class="fa fa-chart-line"></i>
+              <h3>Industry-Specific Expertise</h3>
+              <p>Benefit from our deep understanding of payroll best practices and regulations. We bring over a decade of experience to your business, keeping you ahead of the curve.</p>
+              </article>
             <article class="card">
-              <i class="fa-solid fa-handshake-angle"></i>
+              <i class="fa fa-handshake-angle"></i>
               <h3>Dedicated Support</h3>
-              <p>Responsive assistance from specialists who know your business.</p>
-              <a href="#why-us-page" class="btn primary" style="margin-top:12px">Learn More</a>
-            </article>
+              <p>Responsive assistance from specialists who know your business, and are commited to ensuring we are just a call away.</p>
+              </article>
           </div>
         </div>
       </section>
       
-      <section id="blog-section" style="background:linear-gradient(180deg,#fff,#f8fafc)">
-        <div class="container">
-          <div class="section-head">
-            <span class="pill"><i class="fa-solid fa-newspaper"></i> Latest from Our Blog</span>
-            <h2>Resources for Business Owners</h2>
-            <p>Stay up-to-date with our insights on payroll, tax compliance, and best practices for managing your business's finances.</p>
-          </div>
-          <div class="grid grid-3">
-            <article class="card">
-              <img src="https://images.unsplash.com/photo-1549923746-c225f171b80c?q=80&w=2000&auto=format&fit=crop" style="border-radius:12px;margin-bottom:12px" alt="A team discussing payroll and financial documents at an office table" />
-              <h3 style="font-size:1.2rem">5 Common Payroll Mistakes SMEs Make (And How to Avoid Them)</h3>
-              <p style="font-size:.9rem;opacity:.9">Learn how to spot and prevent errors that can lead to costly fines and employee dissatisfaction.</p>
-              <a href="#" style="font-weight:600;color:var(--blue);display:inline-block;margin-top:8px">Read more &rarr;</a>
-            </article>
-            <article class="card">
-              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop" style="border-radius:12px;margin-bottom:12px" alt="A laptop screen displaying a chart of tax data" />
-              <h3 style="font-size:1.2rem">The Ultimate Guide to SARS Tax Year-End Submissions</h3>
-              <p style="font-size:.9rem;opacity:.9">Our step-by-step guide to navigating the tax year-end process and ensuring full compliance for your business.</p>
-              <a href="#" style="font-weight:600;color:var(--blue);display:inline-block;margin-top:8px">Read more &rarr;</a>
-            </article>
-            <article class="card">
-              <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2000&auto=format&fit=crop" style="border-radius:12px;margin-bottom:12px" alt="An open briefcase with documents, representing legal compliance" />
-              <h3 style="font-size:1.2rem">Understanding UIF and COIDA: What Your Business Needs to Know</h3>
-              <p style="font-size:.9rem;opacity:.9">Demystifying the key labor laws and how they apply to your business's payroll.</p>
-              <a href="#" style="font-weight:600;color:var(--blue);display:inline-block;margin-top:8px">Read more &rarr;</a>
-            </article>
-          </div>
+     <section id="testimonials" class="page-section">
+  <div class="container">
+    <div class="section-head">
+      <h2>What Our Clients Say</h2>
+      <p>Trusted by professionals, businesses, and individuals alike.</p>
+    </div>
+
+    <div class="slider-testimonials">
+      <!-- Slides -->
+      <div class="slides-testimonials" id="slidesTestimonials">
+        <div class="slide-testimonial">
+          <p>“Moagi Payroll Services has been a game-changer for our business. They are reliable, accurate, and have saved us countless hours on  payroll admin. we can focus on what we do best- growing our company!”</p>
+          <div class="client-info">— Bongani M.<br>Founder, ABC Holding</div>
         </div>
-      </section>
+        <div class="slide-testimonial">
+          <p>“Their expertise in SARS submissions and COIDA returns is unmatched. We feel confident and compliant thanks to thier team. It's a weight off our shoulders knowing we have them on our side</p>
+          <div class="client-info">— Thandi K.<br>CEO, Tech Innovators</div>
+        </div>
+        <div class="slide-testimonial">
+          <p>“Professional and thy make a complex process feel simple. The support is top notch. Highly recommended for any SME looking to outsource their payroll.”</p>
+          <div class="client-info">— Lindiwe S.<br>Director, Local logistics</div>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <div class="arrows">
+        <button class="arrow" id="prevTestimonial" aria-label="Previous testimonial">
+          &#10094;
+        </button>
+        <button class="arrow" id="nextTestimonial" aria-label="Next testimonial">
+          &#10095;
+        </button>
+      </div>
+
+      <!-- Dots -->
+      <div class="dots" id="dotsTestimonials"></div>
+    </div>
+  </div>
+</section>
       
       <section id="contact-section">
         <div class="container">
           <div class="section-head">
-            <span class="pill"><i class="fa-solid fa-paper-plane"></i> Get in Touch</span>
+            <span class="pill"><i class="fa fa-paper-plane"></i> Get in Touch</span>
             <h2>Let Us Make Salary Payment Convenient for You</h2>
             <p>Book a free consultation and we’ll tailor a solution to your business's specific payroll needs.</p>
           </div>
           <div class="grid contact-grid">
-            <form class="card" onsubmit="event.preventDefault(); alert('Thank you! We\'ll contact you shortly.');">
+            <form class="card" action="process_form.php" method="post">
               <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
                 <div>
                   <label for="name">Full Name</label>
@@ -329,7 +345,7 @@
                   <textarea id="msg" class="input" rows="5" placeholder="Tell us about your payroll & compliance needs"></textarea>
                 </div>
               </div>
-              <button class="btn primary" style="margin-top:12px"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+              <button class="btn primary" style="margin-top:12px"><i class="fa fa-paper-plane"></i> Send Message</button>
               <p style="margin:10px 0 0;color:var(--gray-600);font-size:14px">* Example tallies above are placeholders except Years Experience, which is auto‑calculated.</p>
             </form>
             <aside class="card foot">
@@ -351,126 +367,36 @@
         </div>
       </section>
       
-      <section id="testimonials-section" style="background:linear-gradient(180deg,#fff,#f8fafc)">
+      
+     <section id="blog-section" style="background:linear-gradient(180deg,#fff,#f8fafc)">
         <div class="container">
           <div class="section-head">
-            <span class="pill"><i class="fa-solid fa-star"></i> Our Clients' Success</span>
-            <h2>What Our Clients Say</h2>
-          </div>
-          <div class="slider-testimonials">
-            <div class="slides-testimonials" id="slidesTestimonials">
-              <blockquote class="slide-testimonial">
-                <p>"Moagi Payroll Services has been a game-changer for our business. They are reliable, accurate, and have saved us countless hours on payroll admin. We can now focus on what we do best—growing our company."</p>
-                <div class="client-info">
-                  <cite><strong>Bongani M.</strong><br>Founder, ABC Holdings</cite>
-                </div>
-              </blockquote>
-              <blockquote class="slide-testimonial">
-                <p>"Their expertise in SARS submissions and COIDA returns is unmatched. We feel confident and compliant thanks to their team. It's a weight off our shoulders knowing we have them on our side."</p>
-                <div class="client-info">
-                  <cite><strong>Thandi K.</strong><br>CEO, Tech Innovators</cite>
-                </div>
-              </blockquote>
-              <blockquote class="slide-testimonial">
-                <p>"Responsive, professional, and they make a complex process feel simple. The support is top-notch. Highly recommended for any SME looking to outsource their payroll."</p>
-                <div class="client-info">
-                  <cite><strong>Lindiwe S.</strong><br>Director, Local Logistics</cite>
-                </div>
-              </blockquote>
-            </div>
-            <div class="dots" id="dotsTestimonials" aria-label="Testimonial slide indicators"></div>
-          </div>
-        </div>
-      </section>
-    </div>
-    
-    <div id="services-page" class="page-section">
-      <section style="padding-top:30px; padding-bottom:30px;">
-        <div class="container">
-          <div class="section-head">
-            <span class="pill"><i class="fa-solid fa-briefcase"></i> Services</span>
-            <h2 class="headline">Comprehensive Payroll & Tax Compliance Services</h2>
-            <p>Our goal is to make payroll and compliance a seamless part of your business. We handle the complexities so you can focus on what matters most.</p>
-          </div>
-          <div class="grid" style="grid-template-columns:1fr 1fr;gap:22px">
-            <div class="card">
-              <span class="pill"><i class="fa-solid fa-calculator"></i> Payroll Processing</span>
-              <h3>Accurate & Timely Payments</h3>
-              <p>We handle all aspects of your payroll run, from calculating salaries and deductions to generating payments and secure payslips for each employee. We ensure your staff is paid on time, every time, with 100% accuracy and confidentiality.</p>
-            </div>
-            <div class="card">
-              <span class="pill"><i class="fa-solid fa-file-circle-check"></i> Tax Compliance</span>
-              <h3>SARS Submissions & IRP5s</h3>
-              <p>We manage all your tax-related payroll obligations. Our services include preparing and submitting your EMP201 monthly returns, balancing your bi-annual EMP501 submissions, and generating and filing IRP5s for your employees at tax year-end.</p>
-            </div>
-            <div class="card">
-              <span class="pill"><i class="fa-solid fa-umbrella"></i> Statutory Returns</span>
-              <h3>UIF, COIDA & EE Submissions</h3>
-              <p>Staying compliant with South African labour laws can be complex. We simplify this process by managing your UIF declarations, submitting your annual COIDA returns for a Letter of Good Standing, and completing your Employment Equity (EE) returns on your behalf.</p>
-            </div>
-            <div class="card">
-              <span class="pill"><i class="fa-solid fa-chart-line"></i> Customised Reporting</span>
-              <h3>Insights & Analytics</h3>
-              <p>Go beyond simple payslips with our custom reporting. We provide detailed payroll reports that offer valuable insights into your company's payroll expenses, leave balances, and other key metrics, all tailored to your specific needs.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section style="background:var(--blue);color:var(--white);padding:20px 0;">
-        <div class="container" style="text-align:center;">
-          <a href="#home-page" class="btn ghost"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
-        </div>
-      </section>
-    </div>
-    
-    <div id="why-us-page" class="page-section">
-      <section style="padding-top:30px; padding-bottom:30px;">
-        <div class="container">
-          <div class="section-head">
-            <span class="pill"><i class="fa-solid fa-circle-check"></i> Our Difference</span>
-            <h2 class="headline">Why Our Clients Choose Us</h2>
-            <p>Our commitment to accuracy, efficiency, and personal support sets us apart from other payroll providers. We're more than a service—we're a partner in your business's success.</p>
+            <span class="pill"><i class="fa-solid fa-newspaper"></i> Latest from Our Blog</span>
+            <h2>Resources for Business Owners</h2>
+            <p>Stay up-to-date with our insights on payroll, tax compliance, and best practices for managing your business's finances.</p>
           </div>
           <div class="grid grid-3">
             <article class="card">
-              <i class="fa-solid fa-handshake-angle"></i>
-              <h3>Dedicated Support</h3>
-              <p>You'll work with a dedicated payroll specialist who understands your business. No more dealing with faceless call centres—we provide responsive, one-on-one support when you need it.</p>
+              <img src="https://images.unsplash.com/photo-1549923746-c225f171b80c?q=80&w=2000&auto=format&fit=crop" style="border-radius:12px;margin-bottom:12px" alt="A team discussing payroll and financial documents at an office table" />
+              <h3 style="font-size:1.2rem">5 Common Payroll Mistakes SMEs Make (And How to Avoid Them)</h3>
+              <p style="font-size:.9rem;opacity:.9">Learn how to spot and prevent errors that can lead to costly fines and employee dissatisfaction.</p>
+              <a href="#" style="font-weight:600;color:var(--blue);display:inline-block;margin-top:8px">Read more &rarr;</a>
             </article>
             <article class="card">
-              <i class="fa-solid fa-user-shield"></i>
-              <h3>Absolute Confidentiality</h3>
-              <p>Payroll data is sensitive. We guarantee the highest level of security and confidentiality for all your business and employee information, giving you peace of mind.</p>
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop" style="border-radius:12px;margin-bottom:12px" alt="A laptop screen displaying a chart of tax data" />
+              <h3 style="font-size:1.2rem">The Ultimate Guide to SARS Tax Year-End Submissions</h3>
+              <p style="font-size:.9rem;opacity:.9">Our step-by-step guide to navigating the tax year-end process and ensuring full compliance for your business.</p>
+              <a href="#" style="font-weight:600;color:var(--blue);display:inline-block;margin-top:8px">Read more &rarr;</a>
             </article>
             <article class="card">
-              <i class="fa-solid fa-gears"></i>
-              <h3>Seamless Integration</h3>
-              <p>Our services are designed to fit seamlessly into your existing operations. We handle the technical side, making the transition to our payroll system simple and stress-free.</p>
-            </article>
-            <article class="card">
-              <i class="fa-solid fa-bullseye"></i>
-              <h3>Unwavering Accuracy</h3>
-              <p>Our meticulous process and robust systems ensure every payslip, tax submission, and report is free of errors. We take pride in our precision so you never have to worry about penalties.</p>
-            </article>
-            <article class="card">
-              <i class="fa-solid fa-chart-column"></i>
-              <h3>Strategic Value</h3>
-              <p>We don't just process payroll; we provide strategic value. Our custom reports help you make smarter business decisions based on real-time payroll data.</p>
-            </article>
-            <article class="card">
-              <i class="fa-solid fa-gauge"></i>
-              <h3>Efficiency & Speed</h3>
-              <p>With our streamlined processes, we complete payroll runs and tax submissions quickly and efficiently, allowing you to meet deadlines effortlessly and save valuable time.</p>
+              <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2000&auto=format&fit=crop" style="border-radius:12px;margin-bottom:12px" alt="An open briefcase with documents, representing legal compliance" />
+              <h3 style="font-size:1.2rem">Understanding UIF and COIDA: What Your Business Needs to Know</h3>
+              <p style="font-size:.9rem;opacity:.9">Demystifying the key labor laws and how they apply to your business's payroll.</p>
+              <a href="#" style="font-weight:600;color:var(--blue);display:inline-block;margin-top:8px">Read more &rarr;</a>
             </article>
           </div>
         </div>
       </section>
-      <section style="background:var(--blue);color:var(--white);padding:20px 0;">
-        <div class="container" style="text-align:center;">
-          <a href="#home-page" class="btn ghost"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
-        </div>
-      </section>
-    </div>
   </main>
   
   <footer>
@@ -481,8 +407,8 @@
       </div>
       <div>
         <h4 class="foot-title">Quick Links</h4>
-        <p><a href="#services-page">Services</a></p>
-        <p><a href="#why-us-page">Why Choose Us</a></p>
+        <p><a href="#services-section">Services</a></p>
+        <p><a href="#why-us-section">Why Choose Us</a></p>
         <p><a href="#testimonials-section">Testimonials</a></p>
         <p><a href="#blog-section">Blog</a></p>
         <p><a href="#contact-section">Contact</a></p>
