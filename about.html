@@ -3,21 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Moagi Payroll Services</title>
-  <meta name="description" content="Learn about our founder, Moagi Sebothoma, and our mission to provide accurate and reliable payroll services to businesses in South Africa." />
+  <title>Moagi Payroll Services – Accurate Payroll & Tax Compliance</title>
+  <meta name="description" content="Accurate and timely payroll processing in Gauteng. We handle SARS submissions, UIF, COIDA, and provide customisable reporting and dedicated support for your business." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-wUYgk8hS1f3d8sP5JQm1T8s-3g8P2r1o0e8j3gF2yHc2r1pVhY1b5e3c1kU8GQxJm2wHn6V7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Moagi Payroll Services",
+    "image": "https://moagipayrollservices.co.za/wp-content/uploads/2024/07/Moagi-Payroll-Services-Logo.svg",
+    "url": "https://moagipayrollservices.co.za",
+    "telephone": "+27784973012",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ZA",
+      "addressRegion": "Gauteng"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    "service": {
+      "@type": "Service",
+      "name": "Payroll Services",
+      "description": "Comprehensive payroll and compliance services for small to medium-sized businesses in South Africa, including SARS, UIF, and COIDA submissions."
+    }
+  }
+  </script>
+  
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main>
-    <header >
+    <header>
       <div class="container nav">
         <div class="brand">
           <a href="index.html">
-            <img src="img/logo.png" alt="Moagi Payroll services" width="400" height="300" >
+            <img src="img/logo.png" alt="Moagi Payroll Services" width="400" height="150">
           </a>
         </div>
         <nav aria-label="Primary">
@@ -26,17 +62,23 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="index.html#services-section">Services</a></li>
             <li><a href="index.html#contact-section">Contact</a></li>
-            <li><a href="index.html#blog-section">Blog</a></li>
+            <li><a href="#blog-section">Blog</a></li>
           </ul>
         </nav>
-        <button class="menu-btn" aria-expanded="false" aria-controls="mobileMenu"><i class="fa-solid fa-bars"></i> Menu</button>
+        <label for="mobileMenuToggle" class="toggle menu-btn" aria-expanded="false" aria-controls="mobileMenu">
+          <input type="checkbox" id="mobileMenuToggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
       </div>
       <div id="mobileMenu" class="mobile-menu" role="dialog" aria-label="Mobile menu">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="index.html#services-section">Services <i class="fa-solid fa-chevron-down"></i></a
+         <a href="index.html#services-section">Services</a>
         <a href="index.html#contact-section">Contact</a>
-        <a class="cta" href="index.html#contact-section" style="background:var(--yellow);margin:10px;border-radius:12px;text-align:center;font-weight:800;color:#111;padding:12px 14px">Book a Free Consultation</a>
+        <a href="index.html#blog-section">Blog</a>
+        <a class="cta" href="#contact-section" style="background:var(--yellow);margin:10px;border-radius:12px;text-align:center;font-weight:800;color:white;padding:12px 14px">Book a Free Consultation</a>
       </div>
     </header>
   
@@ -46,6 +88,7 @@
           <div class="about-image">
             <img src="img/img-moagi.jpg" alt="A photo of the founder, Moagi Sebothoma" style="border-radius: 12px; box-shadow: var(--shadow); align-items:center; background-color:(--blue);">
           </div>
+          <aside>
           <div class="about-text">
             <span class="pill"><i class="fa-solid fa-user-tie"></i> Our Story</span>
             <h2>We Handle the Numbers So You Can Focus on Your Business</h2>
@@ -53,6 +96,7 @@
             <p>Our founder, Moagi Sebothoma, spent over a decade in the payroll industry before starting her own company. She realized that for a business to thrive, its employees need to feel valued and secure. A happy, committed workforce is essential for productivity. This passion for simplifying a critical task is what drives our team today.</p>
             <p>We are dedicated to providing accurate and timely payroll services, tax compliance, and customized reporting. Using the secure, online SAGE payroll system, we can serve clients from Johannesburg to anywhere in the country. We handle the numbers so you can focus on growing your business.</p>
           </div>
+          </aside>
         </div>
       </section>
       
