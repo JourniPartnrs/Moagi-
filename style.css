@@ -1,8 +1,8 @@
 :root{
   --blue:#034d92; /* Primary */
-  --blue-700:#023d75;
-  --yellow:rgb(253, 237, 94); /* Accent */
-  --yellow-700:#fae527;
+  --blue-700:#1f499d;
+  --yellow:rgb (255, 227, 46); /* Accent */
+  --yellow-700:#ffe32e;
   --white:#ffffff;
   --gray-50:#f8fafc;
   --gray-200:#e5e7eb;
