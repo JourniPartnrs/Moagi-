@@ -31,9 +31,9 @@ header{
   background:var(--white);
   box-shadow:0 2px 8px rgba(0,0,0,.06);
 }
-.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-.brand{display:flex;align-items:center;gap:12px; padding: 10px;}
-.brand img{height:72px;width:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:5px 0}
+.brand{display:flex;align-items:center;gap:12px; padding: 5px;}
+.brand img{height:60px;width:auto}
 .brand h1{font-size:1.05rem;margin:0;font-weight:800;color:var(--blue)}
 /* Desktop nav menu - hidden on mobile */
 nav ul{
