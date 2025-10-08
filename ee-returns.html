@@ -13,35 +13,18 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Employment Equity Returns",
+  "description": "As part of our payroll services to our clients, we will ensure that you have all the information required to complete the EE Returns each year"
+ 
+  // ... other service details
+  "provider": {
     "@type": "LocalBusiness",
-    "name": "Moagi Payroll Services",
-    "image": "https://moagipayrollservices.co.za/wp-content/uploads/2024/07/Moagi-Payroll-Services-Logo.svg",
-    "url": "https://moagipayrollservices.co.za",
-    "telephone": "+27784973012",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "ZA",
-      "addressRegion": "Gauteng"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    },
-    "service": {
-      "@type": "Service",
-      "name": "Payroll Services",
-      "description": "Comprehensive payroll and compliance services for small to medium-sized businesses in South Africa, including SARS, UIF, and COIDA submissions."
-    }
+    "@id": "https://moagipayrollservices.co.za/#organization" /* Reference to the main business */
   }
+}
+
   </script>
   
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -140,55 +123,24 @@
 
      
  <div id="ee-returns-page" class="page-section">
-              <h1 style="text-align: center;">Employment Equity Returns</h1>
+              <h1 style="text-align: center;background-color:var(--yellow);padding:20px;margin:0;">Employment Equity Returns (EE RETURNS)</h1>
           </div>
       </section>
       <section style="padding: 5px 0;">
           <div class="container">
               <div class="section-head">
-                  <p>Compliance with Employment Equity regulations is a legal requirement for many businesses. We simplify this complex annual task by ensuring you have all the information required to complete your EE Returns with confidence.</p>
-                  <p>Employment Equity reporting is a legal requirement for designated employers in South Africa. It ensures fair representation and transformation in the workplace. Moagi Payroll Services supports your compliance by preparing and submitting Employment Equity (EE) returns with precision.</p>
+                  <p>As part of our payroll services to our clients, we will ensure that you have all the information required to complete the EE Returns each year.</p>
+                  <p>Companies with less than 50 employees do not report for EE unless their turnover is over or equals the amount in Schedule 4 of the EEA – or who has been declared a designated employer in terms of a collective agreement.</p>
                 </div>
-              <div class="grid grid-3">
-                  <article class="card">
-                      <i class="fa fa-chart-pie"></i>
-                      <h3>Data Preparation</h3>
-                      <p>We gather and prepare all the necessary payroll information required for your annual EE Returns.</p>
-                  </article>
-                  <article class="card">
-                      <i class="fa fa-shield-alt"></i>
-                      <h3>Compliance Assurance</h3>
-                      <p>We provide clear guidance on the latest turnover requirements for designated employers so you can be confident your submission is accurate.</p>
-                  </article>
-              </div>
-          </div>
-      </section>
-             <section style="padding: 5px 0;">
-            <div class="container" style="background-color: var(--yellow); padding-top: 2%; padding-bottom: 3%;">
-              <div class="section-head">
-                  
-              </div>
-            <div class="grid cols">
-                  <article class="card">
-                    <h2 style="color: var(--blue-700); text-align: center;">What this service includes</h2>
-                    <ul>
-                      <li> Collection and storage of all relevant employee demographic and payroll data.</li>
-                      <li> Preparation of annual Employment Equity Reports.</li>
-                      <li> Submission of EE returns to the Department of Labour.</li>
-                      <li> Compliance checks to ensure accurate reflection of workforce profile.</li>
-                      <li> Advisory on thresholds and designated employer obligations.</li>
-                      
-                    </ul>
-                  </article>
-            
+              
             </div>
           </div>
         </section>
 
     <section class="grid grid-3">
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your company</h2>
+        <h2 style="color:var(--blue)">Benefits</h2>
+        <h3 style="color:var(--yellow)" >For your company</h3>
         <ul>
           <li>Compliance with Employment Equity Act requirements.</li>
           <li>Avoidance of penalties for non-submission.</li>
@@ -197,8 +149,8 @@
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your employees</h2>
+        <h2 style="color:var(--blue)">Benefits</h2>
+        <h3 style="color:var(--yellow)" >For your employees</h3>
         <ul>
           <li>Confidence in equal opportunity workplace practices.</li>
           <li>Assurance of fair reporting on diversity and inclusion.</li>
@@ -207,8 +159,8 @@
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Why Moagi</div>
-        <h2>Why choose us</h2>
+        <h2 style="color:var(--blue)">Why Moagi</h2>
+        <h3 style="color:var(--yellow)" >Why choose us</h3>
         <p>We remove the complexity of EE compliance, letting you focus on running your business while meeting statutory obligations.</p>
       </div>
     </section>

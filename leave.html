@@ -13,35 +13,19 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Leave",
+  "description": "Moagi Payroll Services will manage your leave, by maintaining all your records, capturing all leave taken and accruing monthly entitlements.</p>
+             "
+ 
+  // ... other service details
+  "provider": {
     "@type": "LocalBusiness",
-    "name": "Moagi Payroll Services",
-    "image": "https://moagipayrollservices.co.za/wp-content/uploads/2024/07/Moagi-Payroll-Services-Logo.svg",
-    "url": "https://moagipayrollservices.co.za",
-    "telephone": "+27784973012",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "ZA",
-      "addressRegion": "Gauteng"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    },
-    "service": {
-      "@type": "Service",
-      "name": "Payroll Services",
-      "description": "Comprehensive payroll and compliance services for small to medium-sized businesses in South Africa, including SARS, UIF, and COIDA submissions."
-    }
+    "@id": "https://moagipayrollservices.co.za/#organization" /* Reference to the main business */
   }
+}
+
   </script>
   
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -139,59 +123,48 @@
       </section>
 
       <div id="leave-page" class="page-section">
-              <h1 style="text-align: center;">Leave Management</h1>
+              <h1 style="text-align: center;background-color:var(--yellow);color:var(--blue);padding:20px;margin:0;">Leave Management</h1>
           </div>
       </section>
       <section style="padding: 5px 0;">
           <div class="container">
               <div class="section-head">
-                  <p>Leave should be a benefit for your employees, not a burden for your business. Improper leave tracking can lead to costly financial and legal consequences. We provide meticulous leave management to protect your business and keep your employees happy.Managing employee leave is more than just recording days off. It directly affects payroll accuracy, compliance with labour laws, and company costs. Moagi Payroll Services provides a complete leave management solution aligned with the Basic Conditions of Employment Act (BCEA), ensuring every entitlement is tracked, accrued, and paid out correctly.</p>
-              </div>
-              <div class="grid grid-3">
+                  <p style="color:var(--blue);"><strong>Leave = Money, be it annual, sick or any type of leave.</strong></p>
+                  <p>Moagi Payroll Services will manage your leave, by maintaining all your records, capturing all leave taken and accruing monthly entitlements.</p>
+             </div>
+            
+              <div class="grid grid-2">
                   <article class="card">
-                      <i class="fa-solid fa-database"></i>
-                      <h3>Accurate Record-Keeping</h3>
-                      <p>We maintain and update all leave records, ensuring every accrual and day taken is captured with precision.</p>
+                      <!--i class="fa-solid fa-database"></i-->
+                    <h3 style="color:var(--blue);"><strong>Provisions:</strong></h3>
+                    <p>employees get 15 days per annum in order to accrue 1,25 days per month. The leave provision for the month is 1.25 multiplied by rate per day (1.25 X RPD = ) -According to BCEA leave is calculated on basic salary, any permanent allowance, Overtime & Commission over 13 week period and company contributions to Medical Aid or Retirement Fund).</p><br>
+                    <h3 style="color:var(--blue);"><strong>Leave Liability:</strong></h3>
+                    <p> This is the actual value of the leave for an employee. For example, if an employee has 10 days’ vocation – then the leave liability is the value of the daily rate of pay multiplied by the 10 days due.</p>
                   </article>
+                
                   <article class="card">
-                      <i class="fa-solid fa-gavel"></i>
-                      <h3>Compliance with Legislation</h3>
-                      <p>We apply all relevant regulations, including the BCEA, to ensure your leave policies are always compliant.</p>
-                  </article>
-                  <article class="card">
-                      <i class="fa-solid fa-clipboard-list"></i>
-                      <h3>Detailed Tracking</h3>
-                      <p>We track annual, sick, family responsibility, and other leave types to provide a clear, real-time overview of your leave liability.</p>
+                    <h2 style="color:var(--blue);padding:10px;"><strong>Failure to maintain leave records could cost employer a lot of money</strong></h2>
+                      <h3 style="color:var(--blue);"><strong>Sick Leave: </strong></h3>
+                      <p>a five-day worker is entitled to 30 days over a three-year cycle and a six-day worker is entitled to 36 days over a three-year period.</p>
+                      <p>The following leave types do not alter the balances but a control need to be kept.</p><br>
+                    <h3 style="color:var(--blue);"><strong>Family Responsibility –</strong></h3>
+                    <p>This leave can only be taken in the following circumstances: death of spouse, child, grandparents, adoptive parents, parent, siblings- ill health of a child that is fully dependant on the employee</p><br>
+                    <h3 style="color:var(--blue);"><strong>The following leave types do not alter the balances but a control need to be kept.</strong></h3>
+                    
+                    <ul>
+                      <li><strong style="color:var(--blue);">Study-</strong>has to be in the field of work</li><br>
+                      <li><strong style="color:var(--blue);">Unpaid-</strong>this will impact the salary and update the total leave balance.</li><br>
+                      <li><strong style="color:var(--blue);">Maternity Leave and Parental Leave</strong></li>
+                    </ul>
                   </article>
               </div>
           </div>
       </section>
-       <section style="padding: 5px 0;">
-            <div class="container" style="background-color: var(--yellow); padding-top: 2%; padding-bottom: 3%;">
-              <div class="section-head">
-                  
-              </div>
-            <div class="grid cols">
-                  <article class="card">
-                    <h2 style="color: var(--blue-700); text-align: center;">What this service includes</h2>
-                    <ul>
-                      <li> Setup of leave rules per BCEA or company policy</li>
-                      <li> Monthly accrual of annual leave, sick leave, family responsibility leave, and study leave.</li>
-                      <li> Tracking of unpaid, maternity, and parental leave with correct payroll adjustments.</li>
-                      <li> Calculation of leave provision (1.25 days per month for 15-day entitlement).</li>
-                      <li> Leave liability reporting to show the financial value of unused leave.</li>
-                      <li> Accurate maintenance of records for audits and dispute resolution.</li>
-                    </ul>
-                  </article>
-            
-            </div>
-          </div>
-        </section>
 
     <section class="grid grid-3">
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your company</h2>
+        <h2 style="color:var(--blue)">Benefits</h2>
+        <h3 style="color:var(--yellow)" >For your company</h3>
         <ul>
           <li>Avoids costly mistakes from miscalculated leave.</li>
           <li>Full compliance with labour regulations.</li>
@@ -200,8 +173,8 @@
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your employees</h2>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow)" >For your employees</h3>
         <ul>
           <li>Assurance that their leave is calculated fairly and consistently.</li>
           <li>Clear, up-to-date balances available on request.</li>
@@ -210,14 +183,14 @@
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Why Moagi</div>
-        <h2>Why choose us</h2>
+        <h2 style="color:var(--blue);">Why Moagi</h2>
+        <h3 style="color:var(--yellow);">Why choose us</h3>
         <p>We go beyond simply “recording leave” — <br>our solution integrates directly with payroll, ensuring that every leave day taken or accrued ties in seamlessly with pay calculations.</p>
       </div>
     </section>
 
 
-      <section style="background:var(--yellow);color:var(--blue-700);padding:20px 0;">
+      <section style="background:var(--blue);color:var(--blue-700);padding:20px 0;">
         <div class="container" style="text-align:center;">
           <a href="index.html" class="btn ghost"><i class="fa fa-arrow-left"></i> Back to Home</a>
         </div>

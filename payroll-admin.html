@@ -13,35 +13,18 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "payroll Administartion",
+  "description": "Comprehensive payroll and compliance services for small to medium-sized businesses in South Africa, including SARS, UIF, and COIDA submissions."
+ 
+  // ... other service details
+  "provider": {
     "@type": "LocalBusiness",
-    "name": "Moagi Payroll Services",
-    "image": "https://moagipayrollservices.co.za/wp-content/uploads/2024/07/Moagi-Payroll-Services-Logo.svg",
-    "url": "https://moagipayrollservices.co.za",
-    "telephone": "+27784973012",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "ZA",
-      "addressRegion": "Gauteng"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    },
-    "service": {
-      "@type": "Service",
-      "name": "Payroll Services",
-      "description": "Comprehensive payroll and compliance services for small to medium-sized businesses in South Africa, including SARS, UIF, and COIDA submissions."
-    }
+    "@id": "https://moagipayrollservices.co.za/#organization" /* Reference to the main business */
   }
+}
+
   </script>
   
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -139,10 +122,10 @@
       </section>
 
       <div id="payroll-admin-page" class="page-section">
-              <h1 style="text-align: center;">Payroll Processing & Administration</h1>
+              <h1 style="text-align: center;color:var(--blue);background-color:var(--yellow-700);padding:20px;margin:0;">Payroll Administration</h1>
           </div>
       </section>
-      <section style="padding: 5px 0;">
+      <section >
           <div class="container">
               <div class="section-head">
                   <p>Running a successful business means focusing on growth, not getting bogged down in administrative tasks. Our comprehensive payroll administration service ensures every part of your payroll is handled with precision and care, so you can focus on your core business.</p>
@@ -150,60 +133,46 @@
                 </div>
               <div class="grid grid-3">
                   <article class="card">
-                      <i class="fa fa-user-plus"></i>
-                      <h3>Seamless Onboarding</h3>
-                      <p>We handle the setup for new employees, ensuring a smooth transition with accurate data capture and parallel payrolls.</p>
                       
+                      <h3 style="color: var(--blue)">Take-on registered companies (with CIPRO documentation):</h3>
+                      <ul>
+                        <li>We setup the company with all the rules pertaining to company</li><br>
+                        <li>Capture employees into our payroll system with year to date total if required</li><br>
+                        <li>Test the payroll and run parallel payroll to check against an existing payroll</li>
+                      </ul>
                     </article>
+                
                   <article class="card">
-                      <i class="fa fa-calendar-alt"></i>
-                      <h3>Processing</h3>
-                      <p>From capturing overtime to managing loans and outstanding balances, we handle all your recurring payroll tasks with transparency and precision.</p>
-                          
-                    </article>
+                      <h3 style="color: var(--blue)">On a monthly, fortnight or weekly basis:</h3>
+                    <ul>
+                      <li>Capturing of all payroll changes including addition of new employees, overtime, loans, etc</li><br>
+                      <li>Management of loans and maintenance of the outstanding balances</li><br>
+                      <li>Dummy payslips when required</li><br>
+                      <li>Printing of payslips</li><br>
+                      <li>Provide client with electronic reports i.e. variance report – showing differences between the current and previous pay period, listing of all earnings & deductions, Medical Aid, Retirement Funds and SARS etc.</li><br>
+                      <li>Creation of electronic GL to interface with most accounting packages</li><br>
+                      <li>Maintain all leave records</li><br>
+                      <li>Handling all payroll queries for staff and management</li>
+                    </ul>
+                  </article>
+                
                   <article class="card">
-                      <i class="fa fa-credit-card"></i>
-                      <h3>Secure Payments</h3>
-                      <p>We manage direct electronic salary payments and all third-party payments, including garnishee orders, with detailed reconciliations.</p>
-                          
-                    </article>
-                  <article class="card">
-                      <i class="fa fa-headset"></i>
-                      <h3>Dedicated Support</h3>
-                      <p>Our team is your direct point of contact for all payroll-related queries, providing expert, human-centered support when you need it.</p>
-                       
-                    </article>
+                      <h3 style="color: var(--blue)">Salary (EFT) payments & 3rd party payments</h3>
+                    <ul>
+                      <li>Electronic payments of Nett payments into employee bank accounts</li><br>
+                      <li>Electronic payment of all 3rd party payments and providing third parties with recons.</li><br>
+                      <li>Payment of Garnishee order requests</li><br>
+                      <li>On-line submission of EMP201 & payment-on e-filing</li><br>
+                    </ul>
+                  </article>
               </div>
           </div>
       </section>
-            <section style="padding: 5px 0;">
-            <div class="container" style="background-color: var(--yellow); padding-top: 2%; padding-bottom: 3%;">
-              <div class="section-head">
-                  
-              </div>
-            <div class="grid cols">
-                  <article class="card">
-                    <h2 style="color: var(--blue-700); text-align: center;">What this service includes</h2>
-                    <ul>
-                      <li> Setup and maintenance of company payroll rules.</li>
-                      <li> Capturing payroll changes: new hires, overtime, loans, allowances.</li>
-                      <li> Processing weekly, fortnightly, or monthly pay runs.</li>
-                      <li> Dummy payslips for review before finalisation.</li>
-                      <li> Secure electronic payslip distribution</li>
-                      <li> Loan management and garnishee order processing.</li>
-                      <li> Integration with accounting systems (GL exports).</li>
-                      <li> Handling payroll queries for both management and staff.</li>
-                    </ul>
-                  </article>
-            
-            </div>
-          </div>
-        </section>
 
     <section class="grid grid-3">
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your company</h2>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--blue);">For your company</h3>
         <ul>
           <li>Eliminates payroll errors and disputes.</li>
           <li>Saves HR and finance teams hours of manual work.</li>
@@ -212,8 +181,8 @@
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your employees</h2>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--blue);">For your employees</h3>
         <ul>
           <li>Timely, accurate payments.</li>
           <li>Clear, detailed payslips every cycle.</li>
@@ -222,13 +191,13 @@
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Why Moagi</div>
-        <h2>Why choose us</h2>
+        <h2 style="color: var(--blue)">Why Moagi</h2>
+        <h3 style="color: var(--blue)">Why choose us</h3>
         <p>Our payroll processing isn’t just about paying salaries — it’s about delivering accuracy, compliance, and professionalism at every step.</p>
       </div>
     </section>
 
-      <section style="background:var(--yellow);color:var(--blue-700);padding:20px 0;">
+      <section style="background:var(--blue);color:var(--blue-700);padding:20px 0;">
         <div class="container" style="text-align:center;">
           <a href="index.html" class="btn ghost"><i class="fa fa-arrow-left"></i> Back to Home</a>
         </div>
@@ -329,7 +298,9 @@
         <p><a href="https://www.labour.gov.za/" target="_blank" rel="noopener">Department of Labour</a></p>
       </div>
     </div>
-    <div class="container copyright">© <span id="year"></span> Moagi Payroll Services. All rights reserved.</div>
+    <div class="container copyright">© <span id="year"></span> Moagi Payroll Services. All rights reserved.
+      <p><strong>Created by:<a href="https://journipartnrs.co.za/" style="color:Gold;">JourniPartnrs</a></strong></p>
+    </div>
   </footer>
   
   <a href="https://wa.me/27784973012?text=Hello%20Moagi%20Payroll%20Services,%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20services." 
