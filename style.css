@@ -9,19 +9,38 @@
   --gray-600:#6b7280;
   --maxw:1200px;
   --radius:18px;
-  --shadow:0 10px 30px rgba(255, 227, 46, 0.158);
-  --header-height: 65px;
+  --shadow:0 10px 30px rgba(250, 237, 49, 0.158);
+  --header-height: 72px;
 }
 
 *{
   box-sizing:border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
-html,body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;color:#0e1726;background:var(--gray-50)}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+html,body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:#0e1726;
+  background:var(--gray-50);
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 20px;
+}
 
 /* HEADER & NAVIGATION */
 header{
@@ -31,9 +50,9 @@ header{
   background:var(--white);
   box-shadow:0 2px 8px rgba(0,0,0,.06);
 }
-.nav{display:flex;align-items:center;justify-content:space-between;padding:5px 0}
-.brand{display:flex;align-items:center;gap:12px; padding: 5px;}
-.brand img{height:60px;width:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px; padding: 10px;}
+.brand img{height:65px;width:auto}
 .brand h1{font-size:1.05rem;margin:0;font-weight:800;color:var(--blue)}
 /* Desktop nav menu - hidden on mobile */
 nav ul{
@@ -117,9 +136,25 @@ nav a.cta{background:var(--yellow);color:#111;border-radius:12px}
 }
 
 /* MAIN CONTENT SPACING */
-main {
-  padding-top: 0(--header-height);
+.content-start {
+  padding-top: var(--header-height);
 }
+
+/* 🛠️ FIX FOR H1 HEADER GAP 🛠️ */
+/* Target the container of the H1 and the H1 itself to eliminate margin collapse */
+
+/* 1. Eliminate any top padding/margin on the page container */
+.page-section {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* 2. Ensure the H1 (the yellow banner) doesn't push down */
+/* The :first-child targets the H1 that is the very first element inside .page-section */
+.page-section h1:first-child {
+    margin-top: 0 !important; 
+}
+/* ------------------------------- */
 
 /* Slider */
 .hero{position:relative;overflow-x:hidden;background:var(--blue-700);color:#111}
@@ -134,11 +169,21 @@ main {
 .sub{font-size:clamp(14px,2.2vw,18px);opacity:.95;margin-bottom:18px}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;font-weight:700;border:2px solid transparent}
-.btn.primary{background:var(--yellow);color:#111}
+.btn.primary{background:var(--yellow);color:var(--blue);}
 .btn.primary:hover{background:var(--yellow-700)}
 .btn.ghost{background:transparent;border-color:#fff;color:#fff}
 
 /* Testimonials Slider */
+
+#testimonials  {
+  width: 100%;
+  height: auto; /* Example height for the container */
+  background-image: url('img/pexels-tima.jpg');
+  background-size: cover; /* Makes sure the image covers the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+}
+
 .slider-testimonials {
   position: relative;
   overflow: hidden;
@@ -161,8 +206,8 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid var(--white);
-  background: var(--white);
+  border: 2px solid var(--yellow);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -229,14 +274,21 @@ main {
 .stat .num{font-size:clamp(26px,4vw,42px);font-weight:800;color:var(--yellow)}
 .stat .label{opacity:.9}
 /* Sections */
+
 section{padding:64px 0}
+.no-bottom-gap {
+    padding-bottom: 0 !important; /* Use !important if needed to override existing style */
+    margin-bottom: 0 !important;
+}
+
 .section-head{max-width:760px;margin:0 auto 28px;text-align:center}
 .section-head h2{font-size:clamp(24px,4vw,36px);margin:0 0 8px;color:var(--blue)}
 .section-head p{color:var(--gray-600)}
 .grid{display:grid;gap:18px}
-.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-3{grid-template-columns:1fr}
+.grid-2{grid-template-columns:1fr}
 .card{background:var(--white);border-radius:16px;box-shadow:var(--shadow);padding:22px;border:1px solid var(--gray-200)}
-.card h3{margin:8px 0 10px;color:var(--blue)}
+.card h3{margin:8px 07 10px;color:var(--blue)}
 .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(13,59,102,.06);border:1px solid rgba(13,59,102,.15);color:var(--blue);padding:8px 12px;border-radius:999px;font-weight:1000}
 /* Contact Section Reorder */
 .contact-grid{
@@ -274,7 +326,10 @@ section{padding:64px 0}
 
 
 /* Footer */
-footer{background:#0b2c4a;color:#cfe4ff}
+footer{
+  background-color:#1f499d;
+  color:#cfe4ff;
+}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:22px;padding:36px 10px}
 .foot-title{font-weight:800;color:#fff;margin:0 0 10px}
 .foot a{color:#cfe4ff}
@@ -291,7 +346,7 @@ footer{background:#0b2c4a;color:#cfe4ff}
   width: 40px;
   height: 40px;
   /*background:var(--yellow-700);*/ /* WhatsApp brand color */
-  color: yellowgreen;
+  color: var(--yellow);
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
@@ -307,8 +362,14 @@ label{display:block;margin:0 0 6px;font-weight:600;color:var(--blue)}
 .input{width:100%;border-radius:12px;border:1px solid var(--gray-200);padding:12px 14px;background:#fff;font:inherit}
 .input:focus{outline:3px solid rgba(255,193,7,.35);border-color:var(--yellow)}
 /* Responsive */
+
+@media (min-width: 981px){
+    /* Activates 3 columns only on large screens/desktops */
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+}
+
 @media (max-width: 980px){
-  .grid-3{grid-template-columns:1fr 1fr}
+  /*.grid-3{grid-template-columns:1fr 1fr}*/
   .stats .wrap{grid-template-columns:1fr 1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
   .contact-grid{
@@ -319,6 +380,7 @@ label{display:block;margin:0 0 6px;font-weight:600;color:var(--blue)}
   nav ul{display:flex}
   .menu-btn, .mobile-menu {display:none!important}
   .contact-grid{grid-template-columns:2fr 1fr}
+  .grid-2{grid-template-columns: repeat(2, 1fr)}
 }
 @media (max-width: 720px){
   .footer-grid{grid-template-columns:1fr}
