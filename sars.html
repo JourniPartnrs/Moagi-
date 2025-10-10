@@ -13,35 +13,18 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "SARS",
+  "description": ""
+ 
+  // ... other service details
+  "provider": {
     "@type": "LocalBusiness",
-    "name": "Moagi Payroll Services",
-    "image": "https://moagipayrollservices.co.za/wp-content/uploads/2024/07/Moagi-Payroll-Services-Logo.svg",
-    "url": "https://moagipayrollservices.co.za",
-    "telephone": "+27784973012",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "ZA",
-      "addressRegion": "Gauteng"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    },
-    "service": {
-      "@type": "Service",
-      "name": "Payroll Services",
-      "description": "Comprehensive payroll and compliance services for small to medium-sized businesses in South Africa, including SARS, UIF, and COIDA submissions."
-    }
+    "@id": "https://moagipayrollservices.co.za/#organization" /* Reference to the main business */
   }
+}
+
   </script>
   
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -82,151 +65,136 @@
       </div>
     </header>
   
-    <div id="home-page" class="page-section active">
-      <section class="hero" id="home-section">
-        <div class="slides" id="slides">
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="Financial documents and calculator for professional payroll processing." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">Payroll & Compliance</div>
-                <h2 class="headline">Accurate, On‑Time Payroll So You Can Focus on Growth</h2>
-                <p class="sub">End‑to‑end payroll processing, payslips, SARS submissions, UIF & COIDA assistance – done right and on schedule in South Africa.</p>
-                <div class="cta-row">
-                  <a href="index.html#contact-section" class="btn primary"><i class="fa fa-calendar-check"></i> Book a Free Consultation</a>
-                  <a href="index.html#services-section" class="btn ghost"><i class="fa fa-list-check"></i> View Services</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="A team of people working on tax compliance documents." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">Tax Year End</div>
-                <h2 class="headline">SARS Submissions Balanced & On File — August & February</h2>
-                <p class="sub">We prepare, balance and upload your tax year end submissions and issue IRP5s, reducing risk and admin.</p>
-                <div class="cta-row">
-                  <a href="index.html#contact-section" class="btn primary"><i class="fa-solid fa-handshake-angle"></i> Get a Quote</a>
-                  <a href="index.html#why-us-page" class="btn ghost"><i class="fa-solid fa-circle-info"></i> Why Choose Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="A team collaborating on HR reports and employee equity compliance." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">UIF · COIDA · EE</div>
-                <h2 class="headline">Compliance Made Simple for SMEs & Growing Teams</h2>
-                <p class="sub">UIF registrations, COIDA returns, Employment Equity returns, and customisable payroll reporting.</p>
-                <div class="cta-row">
-                  <a href="index.html#services-section" class="btn primary"><i class="fa-solid fa-file-signature"></i> See Compliance Services</a>
-                  <a href="index.html#contact-section" class="btn ghost"><i class="fa-solid fa-paper-plane"></i> Talk to a Specialist</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="arrows">
-          <button class="arrow" id="prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left" style="color:#fff"></i></button>
-          <button class="arrow" id="next" aria-label="Next slide"><i class="fa-solid fa-chevron-right" style="color:#fff"></i></button>
-        </div>
-        <div class="dots" id="dots" aria-label="Slide indicators"></div>
-      </section>
-
-     
- <div id="sars-page" class="page-section">
+    <div id="sars-page" class="page-section">
   
-              <h1 style="text-align: center;">SARS Tax Submissions</h1>
-          </div>
-      </section>
-      <section style="padding: 5px 0;">
-          <div class="container">
-              <div class="section-head">
-                  <p>Tax season doesn't have to be a source of stress. We take the hassle out of SARS submissions by managing your company's monthly PAYE, SDL, and UIF payments, as well as the crucial tax year-end submissions.</p>
-                  <p>Staying compliant with SARS tax submissions can be challenging. Moagi Payroll Services takes the stress out of mid-year and year-end submissions, ensuring that all employee tax data aligns with payments and that every employee receives the correct tax certificate.</p>
-                </div>
-              <div class="grid grid-3">
-                  <article class="card">
-                      <i class="fa-solid fa-balance-scale-right"></i>
-                      <h3>Book Balancing</h3>
-                      <p>We reconcile your August and February submissions against payments already made, ensuring every number is accurate.</p>
-                  </article>
-                  <article class="card">
-                      <i class="fa-solid fa-clipboard-check"></i>
-                      <h3>Full Compliance</h3>
-                      <p>We ensure your business is fully compliant with all SARS requirements, including the correct registration of new employees.</p>
-                  </article>
-                  <article class="card">
-                      <i class="fa-solid fa-file-lines"></i>
-                      <h3>IRP5s Issuing</h3>
-                      <p>We handle the annual issuing of IRP5s to all your employees, removing this significant administrative burden from your plate.</p>
-                  </article>
-              </div>
-          </div>
-      </section>
-             <section style="padding: 5px 0;">
-            <div class="container" style="background-color: var(--yellow); padding-top: 2%; padding-bottom: 3%;">
-              <div class="section-head">
-                  
-              </div>
-            <div class="grid cols">
-                  <article class="card">
-                    <h2 style="color: var(--blue-700); text-align: center;">What this service includes</h2>
-                    <ul>
-                      <li> Monthly PAYE, SDL, and UIF submissions via e-filing.</li>
-                      <li> Mid-year (August) and year-end (February) reconciliations.</li>
-                      <li> Preparation and submission of EMP201 & EMP501 returns</li>
-                      <li> Issuing IRP5 and IT3(a) certificates to employees.</li>
-                      <li> Balancing payments made to SARS with actual payroll data.</li>
-                      <li> Registering new employees for tax numbers where required.</li>
-                    </ul>
-                  </article>
+    <style>
+    /* --- RESPONSIVENESS (Mobile View) --- */
+    @media (max-width: 768px) {
+        .responsive-grid-2 {
+            grid-template-columns: 1fr !important;
+        }
+        .grid-3, 
+        .contact-grid {
+            grid-template-columns: 1fr !important; 
+        }
+        .contact-grid form > .grid {
+             grid-template-columns: 1fr !important; 
+        }
+        .page-section .container {
+            padding: 0 15px;
+        }
+    }
+    </style>
+    <section id="hero-sars" style="
+        position: relative;
+        background-image: url('img/Taxes.jpg'); 
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        min-height: 400px;
+        color: var(--blue);
+        text-align: center;
+    ">
+        <div style="
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); 
+            z-index: 1;
+        "></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: var(--blue);
+            ">
+                SARS Tax Submissions.<br>Accurate Filings, Zero Stress.
+            </h1>
             
-            </div>
-          </div>
-        </section>
+            <a href="#contact-section" class="btn primary" style="
+                background-color: var(--yellow);
+                color: var(--blue); 
+                font-weight: 700;
+                padding: 15px 30px;
+                font-size: 1.1rem;
+                border: none;
+                transition: background-color 0.3s;
+            ">
+                Ensure Tax Compliance
+            </a>
+        </div>
+    </section>
 
-    <section class="grid grid-3">
+    <section style="padding: 40px 0;">
+        <div class="container" style="max-width: 800px; margin: auto;">
+            <div class="section-head" style="text-align: left;">
+                <h2 style="color:var(--blue); margin-bottom: 20px;">SARS Tax Year End Submissions</h2>
+                <p>Moagi Payroll Services will take the hassle out of the SARS August & February Tax Year End Submissions. We will ensure that your new employees (i.e. new to the job market) are registered with SARS and will get their Tax Numbers.</p>
+                <p style="margin-top: 15px;">We will balance the August & Tax Year End Submissions against the payments made and ensure that your submission is uploaded to SARS and issue employees with IRP5's annually.</p>
+            </div>
+            
+            <div style="background-color: var(--yellow); padding: 30px; border-radius: 8px; margin-top: 30px;">
+                <h3 style="color: var(--blue-700); text-align: center; margin-top:0;">Key Compliance Areas</h3>
+                <div class="grid grid-3">
+                    <article style="padding: 15px; text-align: center;">
+                        <i class="fa-solid fa-balance-scale-right" style="font-size: 2rem; color: var(--blue);"></i>
+                        <p style="margin-top: 5px;">Reconciliations & Balancing</p>
+                    </article>
+                    <article style="padding: 15px; text-align: center;">
+                        <i class="fa-solid fa-clipboard-check" style="font-size: 2rem; color: var(--blue);"></i>
+                        <p style="margin-top: 5px;">Submission to SARS</p>
+                    </article>
+                    <article style="padding: 15px; text-align: center;">
+                        <i class="fa-solid fa-file-lines" style="font-size: 2rem; color: var(--blue);"></i>
+                        <p style="margin-top: 5px;">IRP5s Issuing</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--blue); padding: 10px 0;">
+        <div class="container" style="text-align: center;">
+            <h3 style="color: var(--white); margin: 0; font-size: 1.2rem; font-weight: 600;">Guarantee Compliance and Eliminate Tax Season Stress</h3>
+        </div>
+    </section>
+
+    <section class="grid grid-3" style="padding: 40px 0;">
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your company</h2>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow);" >For your company</h3><br>
         <ul>
           <li>Complete compliance with SARS regulations.</li>
           <li>Avoidance of fines and penalties for errors or late submissions.</li>
           <li>Smooth audits with accurate reconciliations.</li>
-          <li></li>
+          <li>Accurate reporting for financial planning.</li>
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your employees</h2>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow);" >For your employees</h3><br>
         <ul>
           <li>Correct and timely IRP5 certificates for personal tax filing.</li>
           <li>Confidence that their tax records are up to date.</li>
           <li>Hassle-free SARS interactions for new employees.</li>
-        
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Why Moagi</div>
-        <h2>Why choose us</h2>
+        <h2 style="color: var(--blue)">Why Moagi</h2>
+        <h3 style="color:var(--yellow);">Why choose us</h3><br>
         <p>We manage your SARS obligations end-to-end, giving you confidence that submissions are handled accurately and on time, every time.</p>
       </div>
     </section>
 
-      
-      <section style="background:var(--yellow);color:var(--blue-700);padding:20px 0;">
-        <div class="container" style="text-align:center;">
-          <a href="index.html" class="btn ghost"><i class="fa fa-arrow-left"></i> Back to Home</a>
-        </div>
-      </section>
+    <section style="background-color: var(--gray-50); padding: 40px 0; text-align: center;">
+        <h2 style="color:var(--blue); margin-bottom: 15px;">Ready for a Hassle-Free Tax Year End?</h2>
+        <a href="#contact-section" class="btn primary" style="font-size: 1.1rem; padding: 15px 30px;">
+             Start Your SARS Submission Today
+        </a>
+    </section>
 
-       <section id="contact-section">
+    <section id="contact-section">
         <div class="container">
           <div class="section-head">
             <span class="pill"><i class="fa fa-paper-plane"></i> Get in Touch</span>
@@ -301,8 +269,11 @@
             </aside>
           </div>
         </div>
-      </section>
+    </section>
+      
+</div>
 
+    
        <footer>
     <div class="container footer-grid foot">
       <div>
@@ -326,7 +297,7 @@
   
   <a href="https://wa.me/27784973012?text=Hello%20Moagi%20Payroll%20Services,%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20services." 
      class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa fa-whatsapp"></i>
   </a>
   
   <script src="script.js"></script>

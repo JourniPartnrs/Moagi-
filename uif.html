@@ -13,35 +13,18 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "UIF",
+  "description": ""
+ 
+  // ... other service details
+  "provider": {
     "@type": "LocalBusiness",
-    "name": "Moagi Payroll Services",
-    "image": "https://moagipayrollservices.co.za/wp-content/uploads/2024/07/Moagi-Payroll-Services-Logo.svg",
-    "url": "https://moagipayrollservices.co.za",
-    "telephone": "+27784973012",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "ZA",
-      "addressRegion": "Gauteng"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    },
-    "service": {
-      "@type": "Service",
-      "name": "Payroll Services",
-      "description": "Comprehensive payroll and compliance services for small to medium-sized businesses in South Africa, including SARS, UIF, and COIDA submissions."
-    }
+    "@id": "https://moagipayrollservices.co.za/#organization" /* Reference to the main business */
   }
+}
+
   </script>
   
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -82,149 +65,134 @@
       </div>
     </header>
   
-    <div id="home-page" class="page-section active">
-      <section class="hero" id="home-section">
-        <div class="slides" id="slides">
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="Financial documents and calculator for professional payroll processing." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">Payroll & Compliance</div>
-                <h2 class="headline">Accurate, On‑Time Payroll So You Can Focus on Growth</h2>
-                <p class="sub">End‑to‑end payroll processing, payslips, SARS submissions, UIF & COIDA assistance – done right and on schedule in South Africa.</p>
-                <div class="cta-row">
-                  <a href="index.html#contact-section" class="btn primary"><i class="fa fa-calendar-check"></i> Book a Free Consultation</a>
-                  <a href="index.html#services-section" class="btn ghost"><i class="fa fa-list-check"></i> View Services</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="A team of people working on tax compliance documents." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">Tax Year End</div>
-                <h2 class="headline">SARS Submissions Balanced & On File — August & February</h2>
-                <p class="sub">We prepare, balance and upload your tax year end submissions and issue IRP5s, reducing risk and admin.</p>
-                <div class="cta-row">
-                  <a href="index.html#contact-section" class="btn primary"><i class="fa-solid fa-handshake-angle"></i> Get a Quote</a>
-                  <a href="index.html#why-us-page" class="btn ghost"><i class="fa-solid fa-circle-info"></i> Why Choose Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="A team collaborating on HR reports and employee equity compliance." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">UIF · COIDA · EE</div>
-                <h2 class="headline">Compliance Made Simple for SMEs & Growing Teams</h2>
-                <p class="sub">UIF registrations, COIDA returns, Employment Equity returns, and customisable payroll reporting.</p>
-                <div class="cta-row">
-                  <a href="index.html#services-section" class="btn primary"><i class="fa-solid fa-file-signature"></i> See Compliance Services</a>
-                  <a href="index.html#contact-section" class="btn ghost"><i class="fa-solid fa-paper-plane"></i> Talk to a Specialist</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="arrows">
-          <button class="arrow" id="prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left" style="color:#fff"></i></button>
-          <button class="arrow" id="next" aria-label="Next slide"><i class="fa-solid fa-chevron-right" style="color:#fff"></i></button>
-        </div>
-        <div class="dots" id="dots" aria-label="Slide indicators"></div>
-      </section>
-
-     
 <div id="uif-page" class="page-section">
      
-              <h1 style="text-align: center;">UIF Management</h1>
-          </div>
-      </section>
-      <section style="padding: 5px 0;">
-          <div class="container">
-              <div class="section-head">
-                  <p>UIF compliance is a legal requirement for all employers. We take the guesswork out of your UIF contributions, ensuring all calculations and submissions are accurate and on time.</p>
-                  <p>UIF is a compulsory contribution for all employees, designed to provide financial support during periods of unemployment, illness, maternity, or parental leave. At Moagi Payroll Services, we ensure correct calculation, deduction, and submission of UIF for both employer and employee contributions.</p>
-                </div>
-              <div class="grid grid-3">
-                  <article class="card">
-                      <i class="fa fa-calculator"></i>
-                      <h3>Accurate Calculations</h3>
-                      <p>We calculate UIF contributions based on each employee's correct taxable earnings, ensuring full compliance.</p>
-                  </article>
-                  <article class="card">
-                      <i class="fa fa-paper-plane"></i>
-                      <h3>Timely Submissions</h3>
-                      <p>We manage the monthly electronic submissions to the Department of Labour on your behalf, so you never miss a deadline.</p>
-                  </article>
-                  <article class="card">
-                      <i class="fa fa-gavel"></i>
-                      <h3>Full Compliance</h3>
-                      <p>Our meticulous process ensures your business is always fully compliant, protecting you from penalties and legal issues.</p>
-                  </article>
-              </div>
-          </div>
-      </section>
-             <section>
-            <div class="container" style="background-color: var(--yellow); padding-top: 2%; padding-bottom: 3%;">
-      
-            <div class="grid cols">
-                  <article class="card">
-                    <h2 style="color: var(--blue-700); text-align: center;">What this service includes</h2>
-                    <ul>
-                      <li> Accurate UIF calculations (1% employee + 1% employer).</li>
-                      <li> Monthly electronic submission of UIF via payroll.</li>
-                      <li> Ensuring compliance with Department of Labour requirements.</li>
-                      <li> Guidance and support for employees when claiming UIF benefits</li>
-                      <li> Reporting to reflect UIF contributions clearly on payslips.</li>
-                  
-                    </ul>
-                  </article>
+    <style>
+    /* --- RESPONSIVENESS (Mobile View) --- */
+    @media (max-width: 768px) {
+        .responsive-grid-2 {
+            grid-template-columns: 1fr !important;
+        }
+        .grid-3, 
+        .contact-grid {
+            grid-template-columns: 1fr !important; 
+        }
+        .contact-grid form > .grid {
+             grid-template-columns: 1fr !important; 
+        }
+        .page-section .container {
+            padding: 0 15px;
+        }
+    }
+    </style>
+    <section id="hero-uif" style="
+        position: relative;
+        background-image: url('img/uif.jpg'); 
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        min-height: 400px;
+        color: var(--blue);
+        text-align: center;
+    ">
+        <div style="
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); 
+            z-index: 1;
+        "></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: var(--blue);
+            ">
+                UIF Compliance & Management.<br>Protecting Employers and Employees.
+            </h1>
             
-            </div>
-          </div>
-        </section>
+            <a href="#contact-section" class="btn primary" style="
+                background-color: var(--yellow);
+                color: var(--blue); 
+                font-weight: 700;
+                padding: 15px 30px;
+                font-size: 1.1rem;
+                border: none;
+                transition: background-color 0.3s;
+            ">
+                Get Your UIF Compliance Quote
+            </a>
+        </div>
+    </section>
+    
+    <section style="padding: 40px 0;">
+        <div class="container" style="max-width: 900px;">
+            <h2 style="color:var(--blue); text-align: center; margin-bottom: 30px;">UIF – Unemployment Insurance Fund</h2>
+            <div class="grid responsive-grid-2" style="grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div>
+                    <p>UIF payments are compulsory for all employees.</p>
+                    <p style="margin-top: 15px;">UIF is calculated on the Taxable earnings of an employee.</p>
+                    <p style="margin-top: 15px;">Commission earnings do not attract UIF. If a salesman earns a basic salary plus commission, he will then only pay the UIF on the basic salary.</p>
+                    <p style="margin-top: 15px;">UIF cannot be claimed on a monthly pension or a disability grant from the state.</p>
+                    <p style="margin-top: 15px;">If a contributor resigns from position, UIF will not be paid (unless it is constructive dismissal)</p>
+                </div>
 
-    <section class="grid grid-3" style="padding-top: 0%;">
+                <div>
+                    <p style="color:var(--blue); font-weight: 600; margin-top: 0; font-size: 1.1rem;">UIF benefits include:</p>
+                    <ul style="margin-left: 20px;">
+                        <li>Illness</li>
+                        <li>Maternity and Parental</li>
+                        <li>Adoption</li>
+                        <li>Dependants</li>
+                        <li>Unemployment</li>
+                    </ul>
+                    <p style="margin-top: 25px;">The employee contributes 1% and the employer 1% which is deducted through payroll and shown on payslips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section style="background-color: var(--blue); padding: 10px 0;">
+        <div class="container" style="text-align: center;">
+            <h3 style="color: var(--white); margin: 0; font-size: 1.2rem; font-weight: 600;">Simplify Compliance and Protect Your Employees' Future</h3>
+        </div>
+    </section>
+
+    <section class="grid grid-3" style="padding-top: 40px; padding-bottom: 40px;">
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your company</h2>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow);" >For your company</h3><br>
         <ul>
           <li>Full compliance with labour legislation.</li>
           <li>Avoid penalties for incorrect or late submissions.</li>
           <li>Reduced admin time — submissions are handled on your behalf.</li>
-          
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Benefits</div>
-        <h2>For your employees</h2>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow);" >For your employees</h3><br>
         <ul>
           <li>Peace of mind knowing contributions are paid.</li>
           <li>Easy access to UIF benefits when required.</li>
           <li>Transparent records displayed on payslips.</li>
-        
         </ul>
       </div>
       <div class="card">
-        <div class="kicker">Why Moagi</div>
-        <h2>Why choose us</h2>
+        <h2 style="color: var(--blue)">Why Moagi</h2>
+        <h3 style="color:var(--yellow);">Why choose us</h3><br>
         <p>We simplify UIF management so both employer and employee are protected, with every contribution traceable and compliant.</p>
       </div>
     </section>
 
+    <section style="background-color: var(--gray-50); padding: 40px 0; text-align: center;">
+        <h2 style="color:var(--blue); margin-bottom: 15px;">Need Help with Accurate and Timely UIF Submissions?</h2>
+        <a href="#contact-section" class="btn primary" style="font-size: 1.1rem; padding: 15px 30px;">
+             Get a Custom UIF Compliance Quote
+        </a>
+    </section>
       
-      <section style="background:var(--yellow);color:var(--blue-700);padding:20px 0;">
-        <div class="container" style="text-align:center;">
-          <a href="index.html" class="btn ghost"><i class="fa fa-arrow-left"></i> Back to Home</a>
-        </div>
-      </section>
-
-       <section id="contact-section">
+    <section id="contact-section">
         <div class="container">
           <div class="section-head">
             <span class="pill"><i class="fa fa-paper-plane"></i> Get in Touch</span>
@@ -299,8 +267,11 @@
             </aside>
           </div>
         </div>
-      </section>
+    </section>
+      
+</div>
 
+    
        <footer>
     <div class="container footer-grid foot">
       <div>
@@ -324,7 +295,7 @@
   
   <a href="https://wa.me/27784973012?text=Hello%20Moagi%20Payroll%20Services,%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20services." 
      class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa fa-whatsapp"></i>
   </a>
   
   <script src="script.js"></script>

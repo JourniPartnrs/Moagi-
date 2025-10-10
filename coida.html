@@ -28,7 +28,7 @@
 
   </script>
   
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="style.css" />
   <style>
   ul li {
@@ -71,132 +71,121 @@
       </div>
     </header>
   
-    <div id="home-page" class="page-section active">
-      <section class="hero" id="home-section">
-        <div class="slides" id="slides">
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="Financial documents and calculator for professional payroll processing." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">Payroll & Compliance</div>
-                <h2 class="headline">Accurate, On‑Time Payroll So You Can Focus on Growth</h2>
-                <p class="sub">End‑to‑end payroll processing, payslips, SARS submissions, UIF & COIDA assistance – done right and on schedule in South Africa.</p>
-                <div class="cta-row">
-                  <a href="index.html#contact-section" class="btn primary"><i class="fa fa-calendar-check"></i> Book a Free Consultation</a>
-                  <a href="index.html#services-section" class="btn ghost"><i class="fa fa-list-check"></i> View Services</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="A team of people working on tax compliance documents." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">Tax Year End</div>
-                <h2 class="headline">SARS Submissions Balanced & On File — August & February</h2>
-                <p class="sub">We prepare, balance and upload your tax year end submissions and issue IRP5s, reducing risk and admin.</p>
-                <div class="cta-row">
-                  <a href="index.html#contact-section" class="btn primary"><i class="fa-solid fa-handshake-angle"></i> Get a Quote</a>
-                  <a href="index.html#why-us-page" class="btn ghost"><i class="fa-solid fa-circle-info"></i> Why Choose Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="A team collaborating on HR reports and employee equity compliance." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">UIF · COIDA · EE</div>
-                <h2 class="headline">Compliance Made Simple for SMEs & Growing Teams</h2>
-                <p class="sub">UIF registrations, COIDA returns, Employment Equity returns, and customisable payroll reporting.</p>
-                <div class="cta-row">
-                  <a href="index.html#services-section" class="btn primary"><i class="fa-solid fa-file-signature"></i> See Compliance Services</a>
-                  <a href="index.html#contact-section" class="btn ghost"><i class="fa-solid fa-paper-plane"></i> Talk to a Specialist</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="arrows">
-          <button class="arrow" id="prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left" style="color:#fff"></i></button>
-          <button class="arrow" id="next" aria-label="Next slide"><i class="fa-solid fa-chevron-right" style="color:#fff"></i></button>
-        </div>
-        <div class="dots" id="dots" aria-label="Slide indicators"></div>
-      </section>
+<div id="coida-page" class="page-section">
 
-    <div id="coida-page" class="page-section">
-              <h1 style="text-align: center;color:var(--blue); background-color:var(--yellow); padding:20px; margin:0;">COIDA – (formerly WCA – Workman’s Compensation Act)</h1>
-          </div>
-      </section>
-      <section style="padding: 5px 0;">
-          <div class="container">
-              <div class="section-head">
-              
-                  <p>In order for the company to get a <strong>Letter of Good Standing</strong> the COIDA return is completed each year at the end of February. Each industry is given a percentage that has to be calculated on employee taxable earnings with the current maximum being R403.500.00 per annum or R33 625.00 per month.</p>
-                </div>
-              <div class="grid grid-2">
-                  <article class="card">
-                      
-                      <h3><strong>Earnings to be included in the COIDA Return are:</strong></h3>
+    <style>
+    @media (max-width: 768px) {
+        .responsive-grid-2, .grid-3, .contact-grid {
+            grid-template-columns: 1fr !important; 
+        }
+        .page-section .container {
+            padding: 0 15px;
+        }
+    }
+    </style>
+    <section id="hero-coida" style="
+        position: relative;
+        background-image: url('img/coida.jpg'); 
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        min-height: 400px;
+        color: var(--blue);
+        text-align: center;
+    ">
+        <div style="
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); 
+            z-index: 1;
+        "></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: var(--blue);
+            ">
+                COIDA & WCA Compliance.<br>Secure Your Letter of Good Standing.
+            </h1>
+            <a href="#contact-section" class="btn primary" style="
+                background-color: var(--yellow);
+                color: var(--blue); 
+                font-weight: 700;
+                padding: 15px 30px;
+                font-size: 1.1rem;
+                border: none;
+                transition: background-color 0.3s;
+            ">
+                Get Compliant Now
+            </a>
+        </div>
+    </section>
+
+    <section style="padding: 40px 0;">
+        <div class="container">
+            <h2 style="color:var(--blue); text-align: center; margin-bottom: 30px;">COIDA – (formerly WCA - Workman’s Compensation Act)</h2>
+            <div class="grid responsive-grid-2" style="grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div>
+                    <p>In order for the company to get a <strong>Letter of Good Standing</strong> the COIDA return is completed each year at the end of February. Each industry is given a percentage that has to be calculated on employee taxable earnings with the current maximum being R403,500.00 per annum or R33 625.00 per month.</p>
+
+                    <h3 style="color:var(--blue); margin-top: 20px;">Earnings to be included in the COIDA Return are:</h3>
                     <ul>
-                      <li>Earnings/ Drawings paid to working Directors of a Company or Members of a Close corporation</li>
-                      <li>Cash value of fringe benefits- company car, accommodation, reduced rates etc.</li>
+                      <li>Earnings/ Drawings paid to working Directors of a Company or Members of a Close Corporation</li>
+                      <li>Cash value of fringe benefits: company car, accommodation, reduced rates etc.</li>
                       <li>The cash value of food and quarters provided to employees as part of their remuneration package.</li>
                       <li>Commission of a regular nature.</li>
-                      <li>Bonuses of a regular nature e. g. (Annual Bonus)</li>
-                      <li>Regular overtime </li>
+                      <li>Bonuses of a regular nature e.g. (<strong>Annual Bonus</strong>)</li>
+                      <li>Regular overtime.</li>
                       <li>Actual earnings for the month, head count (Directors & Members in separate column)</li>
                       <li>Project earnings and headcount for the coming year.</li>
-                    </ul> 
-                        
-                  </article>
-                  <article class="card">
-                      
-                      <p>The COIDA return has to be completed and returned to the Compensation Commissioner by the 31 March each year.
+                    </ul>
+                </div>
 
-Moagi Payroll Service </p>
-                      <p>Moagi Payroll Service will complete and ensure that your return is submitted to the Commissioner, once a director of the respective company has approved the declaration.</p>
-                  </article>
-              </div>
-          </div>
-      </section>
-             
-    <section class="grid grid-3" style="padding: 20px 0;">
+                <div>
+                    <p>The COIDA return has to be completed and returned to the Compensation Commissioner by the 31 March each year.</p>
+
+                    <p style="margin-top: 20px;">Moagi Payroll Service will complete and ensure that your return is submitted to the Commissioner, once a director of the respective company has approved the declaration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--blue); padding: 10px 0;">
+        <div class="container" style="text-align: center;">
+            <h3 style="color: var(--white); margin: 0; font-size: 1.2rem; font-weight: 600;">Guarantee Compliance and Eliminate Tax Season Stress</h3>
+        </div>
+    </section>
+
+    <section class="grid grid-3" style="padding: 40px 0;">
       <div class="card">
-        <h2 style="color:var(--blue)">Benefits</h2>
-        <h3 style="color:var(--yellow)" >For your company</h3>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow);" >For your company</h3>
         <ul>
-          <li>Eligibility to tender and secure contracts requiring a Letter of Good Standing.</li>
-          <li>Reduced risk of penalties for late or inaccurate submissions.</li>
-          <li>Peace of mind that all employee earnings are correctly reported.</li>
-          
+          <li><strong>Complete Compliance: </strong>Meet all legal obligations under the Compensation for Occupational Injuries and Diseases Act (COIDA).</li>
+          <li><strong>Business Continuity: </strong>Secure the mandatory Letter of Good Standing for tenders and contracts.</li>
+          <li><strong>Risk Mitigation:</strong> Avoid penalties and legal complications from incorrect submissions.</li>
+          <li><strong>Reduced Admin: </strong>Free up your HR/Finance team from complex annual submissions.</li>
         </ul>
       </div>
       <div class="card">
-        <h2 style="color:var(--blue)">Benefits</h2>
-        <h3 style="color:var(--yellow)" >For your employees</h3>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow);" >For your employees</h3>
         <ul>
-          <li>Assurance of compensation coverage in case of workplace accidents.</li>
-          <li>Protection for dependents if injury or illness occurs.</li>
+          <li><strong>Workplace Protection: </strong>Assurance of coverage in case of injury or occupational disease.</li>
+          <li><strong>Fair Compensation:</strong> Correct reporting ensures they are eligible for the appropriate benefits.</li>
+          <li><strong>Peace of Mind:</strong> Confidence that the employer is fully compliant with labor law.</li>
         </ul>
       </div>
       <div class="card">
-        <h2 style="color:var(--blue)">Why Moagi</h2>
-        <h3 style="color:var(--yellow)" >Why choose us</h3>
-        <p>We ensure every return is completed accurately and on time, so your business maintains compliance and employees remain covered.</p>
+        <h2 style="color: var(--blue)">Why Moagi</h2>
+        <h3 style="color:var(--yellow);">Why choose us</h3>
+        <p>We provide specialist knowledge to navigate COIDA requirements, ensuring your return is always accurate, on time, and legally sound.</p>
       </div>
     </section>
 
-      <section style="background:var(--yellow);color:var(--blue-700);padding:20px 0;">
-        <div class="container" style="text-align:center;">
-          <a href="index.html" class="btn ghost"><i class="fa fa-arrow-left"></i> Back to Home</a>
-        </div>
-      </section>
-
-       <section id="contact-section">
+    <section id="contact-section" style="background-color: var(--gray-50); padding: 40px 0;">
         <div class="container">
           <div class="section-head">
             <span class="pill"><i class="fa fa-paper-plane"></i> Get in Touch</span>
@@ -271,7 +260,9 @@ Moagi Payroll Service </p>
             </aside>
           </div>
         </div>
-      </section>
+    </section>
+      
+</div>
 
        <footer>
     <div class="container footer-grid foot">
@@ -296,7 +287,7 @@ Moagi Payroll Service </p>
   
   <a href="https://wa.me/27784973012?text=Hello%20Moagi%20Payroll%20Services,%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20services." 
      class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa fa-whatsapp"></i>
   </a>
   
   <script src="script.js"></script>

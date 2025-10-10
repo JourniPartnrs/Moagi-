@@ -65,114 +65,120 @@
       </div>
     </header>
   
-    <div id="home-page" class="page-section active">
-      <section class="hero" id="home-section">
-        <div class="slides" id="slides">
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="Financial documents and calculator for professional payroll processing." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">Payroll & Compliance</div>
-                <h2 class="headline">Accurate, On‑Time Payroll So You Can Focus on Growth</h2>
-                <p class="sub">End‑to‑end payroll processing, payslips, SARS submissions, UIF & COIDA assistance – done right and on schedule in South Africa.</p>
-                <div class="cta-row">
-                  <a href="index.html#contact-section" class="btn primary"><i class="fa fa-calendar-check"></i> Book a Free Consultation</a>
-                  <a href="index.html#services-section" class="btn ghost"><i class="fa fa-list-check"></i> View Services</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="A team of people working on tax compliance documents." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">Tax Year End</div>
-                <h2 class="headline">SARS Submissions Balanced & On File — August & February</h2>
-                <p class="sub">We prepare, balance and upload your tax year end submissions and issue IRP5s, reducing risk and admin.</p>
-                <div class="cta-row">
-                  <a href="index.html#contact-section" class="btn primary"><i class="fa-solid fa-handshake-angle"></i> Get a Quote</a>
-                  <a href="index.html#why-us-page" class="btn ghost"><i class="fa-solid fa-circle-info"></i> Why Choose Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img class="bg" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="A team collaborating on HR reports and employee equity compliance." />
-            <div class="overlay"></div>
-            <div class="container slide-content">
-              <div class="slide-card">
-                <div class="kicker">UIF · COIDA · EE</div>
-                <h2 class="headline">Compliance Made Simple for SMEs & Growing Teams</h2>
-                <p class="sub">UIF registrations, COIDA returns, Employment Equity returns, and customisable payroll reporting.</p>
-                <div class="cta-row">
-                  <a href="index.html#services-section" class="btn primary"><i class="fa-solid fa-file-signature"></i> See Compliance Services</a>
-                  <a href="index.html#contact-section" class="btn ghost"><i class="fa-solid fa-paper-plane"></i> Talk to a Specialist</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="arrows">
-          <button class="arrow" id="prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left" style="color:#fff"></i></button>
-          <button class="arrow" id="next" aria-label="Next slide"><i class="fa-solid fa-chevron-right" style="color:#fff"></i></button>
-        </div>
-        <div class="dots" id="dots" aria-label="Slide indicators"></div>
-      </section>
-
-     
- <div id="ee-returns-page" class="page-section">
-              <h1 style="text-align: center;background-color:var(--yellow);padding:20px;margin:0;">Employment Equity Returns (EE RETURNS)</h1>
-          </div>
-      </section>
-      <section style="padding: 5px 0;">
-          <div class="container">
-              <div class="section-head">
-                  <p>As part of our payroll services to our clients, we will ensure that you have all the information required to complete the EE Returns each year.</p>
-                  <p>Companies with less than 50 employees do not report for EE unless their turnover is over or equals the amount in Schedule 4 of the EEA – or who has been declared a designated employer in terms of a collective agreement.</p>
-                </div>
-              
-            </div>
-          </div>
-        </section>
-
-    <section class="grid grid-3">
-      <div class="card">
-        <h2 style="color:var(--blue)">Benefits</h2>
-        <h3 style="color:var(--yellow)" >For your company</h3>
-        <ul>
-          <li>Compliance with Employment Equity Act requirements.</li>
-          <li>Avoidance of penalties for non-submission.</li>
-          <li>Strengthened reputation as a fair and inclusive employer.</li>
-          
-        </ul>
-      </div>
-      <div class="card">
-        <h2 style="color:var(--blue)">Benefits</h2>
-        <h3 style="color:var(--yellow)" >For your employees</h3>
-        <ul>
-          <li>Confidence in equal opportunity workplace practices.</li>
-          <li>Assurance of fair reporting on diversity and inclusion.</li>
-          
+    <div id="ee-page" class="page-section">
+    
+    <style>
+    @media (max-width: 768px) {
+        .responsive-grid-2, .grid-3, .contact-grid {
+            grid-template-columns: 1fr !important; 
+        }
+        .page-section .container {
+            padding: 0 15px;
+        }
+    }
+    </style>
+    <section id="hero-ee" style="
+        position: relative;
+        background-image: url('img/ee.jpg'); 
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        min-height: 400px;
+        color: var(--blue);
+        text-align: center;
+    ">
+        <div style="
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); 
+            z-index: 1;
+        "></div>
         
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: var(--blue);
+            ">
+                Employment Equity Returns.<br>Mandatory Compliance, Simplified.
+            </h1>
+            
+            <a href="#contact-section" class="btn primary" style="
+                background-color: var(--yellow);
+                color: var(--blue); 
+                font-weight: 700;
+                padding: 15px 30px;
+                font-size: 1.1rem;
+                border: none;
+                transition: background-color 0.3s;
+            ">
+                Start Your EE Submission
+            </a>
+        </div>
+    </section>
+
+    <section style="padding: 40px 0;">
+        <div class="container" style="max-width: 800px; margin: auto;">
+            <div class="section-head" style="text-align: left;">
+                <h2 style="color:var(--blue); margin-bottom: 20px;">Employment Equity Returns (EE Returns)</h2>
+                <p>As part of our payroll services to our clients, we will ensure that you have all the information required to complete the EE Returns each year.</p><br>
+                <p>Companies with less than 50 employees do not report for EE unless their turnover is over or equals the amount in schedule 4 of the EEA, or one has been declared a designated employer in terms of a collective agreement.</p>
+            </div>
+            
+            <div style="background-color: var(--yellow); padding: 30px; border-radius: 8px; margin-top: 30px;">
+                <h3 style="color: var(--blue-700); text-align: center; margin-top:0;">Key Areas of Assistance</h3>
+                <div class="grid grid-3">
+                    <article style="padding: 15px; text-align: center;">
+                        <i class="fa-solid fa-people-carry-box" style="font-size: 2rem; color: var(--blue);"></i>
+                        <p style="margin-top: 5px;">Data Preparation</p>
+                    </article>
+                    <article style="padding: 15px; text-align: center;">
+                        <i class="fa-solid fa-file-signature" style="font-size: 2rem; color: var(--blue);"></i>
+                        <p style="margin-top: 5px;">Annual Submission</p>
+                    </article>
+                    <article style="padding: 15px; text-align: center;">
+                        <i class="fa-solid fa-clipboard-check" style="font-size: 2rem; color: var(--blue);"></i>
+                        <p style="margin-top: 5px;">Employer Guidance</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--blue); padding: 10px 0;">
+        <div class="container" style="text-align: center;">
+            <h3 style="color: var(--white); margin: 0; font-size: 1.2rem; font-weight: 600;">Guarantee Compliance and Eliminate Tax Season Stress</h3>
+        </div>
+    </section>
+
+    <section class="grid grid-3" style="padding: 40px 0;">
+      <div class="card">
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow);" >For your company</h3><br>
+        <ul>
+          <li><strong>Full Legal Compliance:</strong> Meet the mandatory requirements of the Employment Equity Act (EEA).</li>
+          <li><strong>Reputation Protection:</strong> Demonstrate commitment to transformation and diversity.</li>
+          <li><strong>Reduced Admin:</strong> Streamline the complex data preparation and submission process.</li>
+          <li><strong>Audit Readiness:</strong> Ensure your records are accurate and ready for potential Department of Labour audits.</li>
         </ul>
       </div>
       <div class="card">
-        <h2 style="color:var(--blue)">Why Moagi</h2>
-        <h3 style="color:var(--yellow)" >Why choose us</h3>
-        <p>We remove the complexity of EE compliance, letting you focus on running your business while meeting statutory obligations.</p>
+        <h2 style="color:var(--blue);">Benefits</h2>
+        <h3 style="color:var(--yellow);" >For your employees</h3><br>
+        <ul>
+          <li><strong>Fair Workplace: </strong>Contributes to an equitable and non-discriminatory work environment.</li>
+          <li><strong>Confidence in Employer:</strong> Employees know the company is adhering to labor law.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 style="color: var(--blue)">Why Moagi</h2>
+        <h3 style="color:var(--yellow);">Why choose us</h3><br>
+        <p>We provide specialist knowledge to navigate the EE requirements, ensuring your return is always accurate, on time, and legally sound.</p>
       </div>
     </section>
 
-
-      <section style="background:var(--yellow);color:var(--blue-700);padding:20px 0;">
-        <div class="container" style="text-align:center;">
-          <a href="index.html" class="btn ghost"><i class="fa fa-arrow-left"></i> Back to Home</a>
-        </div>
-      </section>
-
-       <section id="contact-section">
+    <section id="contact-section" style="background-color: var(--gray-50); padding: 40px 0;">
         <div class="container">
           <div class="section-head">
             <span class="pill"><i class="fa fa-paper-plane"></i> Get in Touch</span>
@@ -247,8 +253,11 @@
             </aside>
           </div>
         </div>
-      </section>
+    </section>
+      
+</div>
 
+               
        <footer>
     <div class="container footer-grid foot">
       <div>
@@ -272,7 +281,7 @@
   
   <a href="https://wa.me/27784973012?text=Hello%20Moagi%20Payroll%20Services,%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20services." 
      class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa fa-whatsapp"></i>
   </a>
   
   <script src="script.js"></script>
