@@ -52,7 +52,15 @@ header{
 }
 .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
 .brand{display:flex;align-items:center;gap:12px; padding: 10px;}
-.brand img{height:65px;width:auto}
+.brand img {
+    height: 48px; /* Slightly smaller for better fit in a sticky header, but still prominent */
+    max-height: 65px; /* Ensures it doesn't grow too large */
+    width: auto;      /* CRITICAL: Maintains aspect ratio */
+    display: block;
+    /* Optional: A subtle shadow can make it "pop" against the white background */
+    /* filter: drop-shadow(0 0 2px rgba(0,0,0,0.1)); */
+}
+
 .brand h1{font-size:1.05rem;margin:0;font-weight:800;color:var(--blue)}
 /* Desktop nav menu - hidden on mobile */
 nav ul{
@@ -385,6 +393,9 @@ label{display:block;margin:0 0 6px;font-weight:600;color:var(--blue)}
 @media (max-width: 720px){
   .footer-grid{grid-template-columns:1fr}
   .slide{height:72vh}
+  .brand img {
+      height: 40px; 
+    }
 }
 
 .fa-cols {
