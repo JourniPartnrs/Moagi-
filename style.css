@@ -53,8 +53,8 @@ header{
 .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
 .brand{display:flex;align-items:center;gap:12px; padding: 10px;}
 .brand img {
-    height: 48px; /* Slightly smaller for better fit in a sticky header, but still prominent */
-    max-height: 65px; /* Ensures it doesn't grow too large */
+    height: 65px; /* Slightly smaller for better fit in a sticky header, but still prominent */
+    max-height: 100px; /* Ensures it doesn't grow too large */
     width: auto;      /* CRITICAL: Maintains aspect ratio */
     display: block;
     /* Optional: A subtle shadow can make it "pop" against the white background */
@@ -394,7 +394,7 @@ label{display:block;margin:0 0 6px;font-weight:600;color:var(--blue)}
   .footer-grid{grid-template-columns:1fr}
   .slide{height:72vh}
   .brand img {
-      height: 40px; 
+      height: 65px; 
     }
 }
 
