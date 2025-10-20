@@ -18,7 +18,7 @@ mobileLinks.forEach(link => {
 });
 
 // Hero Slider Logic
-const slidesEl = document.getElementById('slides');
+/*const slidesEl = document.getElementById('slides');
 const slides = [...document.querySelectorAll('.slide')];
 const dotsEl = document.getElementById('dots');
 const prevBtn = document.getElementById('prev');
@@ -70,7 +70,7 @@ nextBtn.addEventListener('click', next);
 document.querySelector('.hero').addEventListener('mouseenter', stop);
 document.querySelector('.hero').addEventListener('mouseleave', start);
 renderDots();
-start();
+start();*/
 
 // Testimonials Slider Logic
 const slidesTestimonialsEl = document.getElementById('slidesTestimonials');
