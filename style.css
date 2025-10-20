@@ -53,7 +53,7 @@ header{
 .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
 .brand{display:flex;align-items:center;gap:12px; padding: 10px;}
 .brand img {
-    height: 65px; /* Slightly smaller for better fit in a sticky header, but still prominent */
+    height: 50px; /* Slightly smaller for better fit in a sticky header, but still prominent */
     max-height: 100px; /* Ensures it doesn't grow too large */
     width: auto;      /* CRITICAL: Maintains aspect ratio */
     display: block;
@@ -173,20 +173,45 @@ nav a.cta{background:var(--yellow);color:#111;border-radius:12px}
 .slide-content{position:relative;z-index:2;height:100%;display:flex;align-items:center}
 .slide-card{max-width:850px;color:var(--white);padding:28px;border-radius:var(--radius);backdrop-filter: blur(3px);}
 .kicker{letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--yellow)}
-.headline{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:8px 0 10px;font-weight:800}
-.sub{font-size:clamp(14px,2.2vw,18px);opacity:.95;margin-bottom:18px}
+.headline{font-size:clamp(30px,7vw,50px);line-height:1.1;margin:8px 0 10px;font-weight:800}
+.sub{font-size:clamp(16px,4.4vw,20px);opacity:.95;margin-bottom:18px}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;font-weight:700;border:2px solid transparent}
-.btn.primary{background:var(--yellow);color:var(--blue);}
-.btn.primary:hover{background:var(--yellow-700)}
-.btn.ghost{background:transparent;border-color:#fff;color:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;font-weight:700;border:2px solid transparent;background:var(--yellow);color:var(--blue);}
+.btn{background:var(--yellow);color:var(--blue);}
+.btn:hover{background:var(--yellow-700)}
+
+
+  
+/* Tallies */
+.stats{background:var(--blue);color:var(--white)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:30px 0}
+.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:22px;text-align:center}
+.stat .num{font-size:clamp(26px,4vw,42px);font-weight:800;color:var(--yellow)}
+.stat .label{opacity:.9}
+/* Sections */
+
+section{padding:64px 0}
+.no-bottom-gap {
+    padding-bottom: 0 !important; /* Use !important if needed to override existing style */
+    margin-bottom: 0 !important;
+}
+
+.section-head{max-width:760px;margin:0 auto 28px;text-align:center}
+.section-head h2{font-size:clamp(24px,4vw,36px);margin:0 0 8px;color:var(--blue)}
+.section-head p{color:var(--gray-600)}
+.grid{display:grid;gap:18px}
+.grid-3{grid-template-columns:1fr}
+.grid-2{grid-template-columns:1fr}
+.card{background:var(--white);border-radius:16px;box-shadow:var(--shadow);padding:22px;border:1px solid var(--gray-200)}
+.card h3{margin:8px 07 10px;color:var(--blue)}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(13,59,102,.06);border:1px solid rgba(13,59,102,.15);color:var(--blue);padding:8px 12px;border-radius:999px;font-weight:1000}
 
 /* Testimonials Slider */
 
 #testimonials  {
   width: 100%;
   height: auto; /* Example height for the container */
-  background-image: url('img/pexels-tima.jpg');
+  background-image: url('img/hand.jpg');
   background-size: cover; /* Makes sure the image covers the entire element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
@@ -215,7 +240,7 @@ nav a.cta{background:var(--yellow);color:#111;border-radius:12px}
   align-items: center;
   text-align: center;
   border: 2px solid var(--yellow);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -252,7 +277,7 @@ nav a.cta{background:var(--yellow);color:#111;border-radius:12px}
   cursor: pointer;
 }
 .dot.active {
-  background: var(--yellow);
+  background: var(--blue);
   border-color: var(--yellow);
 }
 
@@ -274,30 +299,6 @@ nav a.cta{background:var(--yellow);color:#111;border-radius:12px}
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.10);
 }
-  
-/* Tallies */
-.stats{background:var(--blue);color:var(--white)}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:30px 0}
-.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:22px;text-align:center}
-.stat .num{font-size:clamp(26px,4vw,42px);font-weight:800;color:var(--yellow)}
-.stat .label{opacity:.9}
-/* Sections */
-
-section{padding:64px 0}
-.no-bottom-gap {
-    padding-bottom: 0 !important; /* Use !important if needed to override existing style */
-    margin-bottom: 0 !important;
-}
-
-.section-head{max-width:760px;margin:0 auto 28px;text-align:center}
-.section-head h2{font-size:clamp(24px,4vw,36px);margin:0 0 8px;color:var(--blue)}
-.section-head p{color:var(--gray-600)}
-.grid{display:grid;gap:18px}
-.grid-3{grid-template-columns:1fr}
-.grid-2{grid-template-columns:1fr}
-.card{background:var(--white);border-radius:16px;box-shadow:var(--shadow);padding:22px;border:1px solid var(--gray-200)}
-.card h3{margin:8px 07 10px;color:var(--blue)}
-.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(13,59,102,.06);border:1px solid rgba(13,59,102,.15);color:var(--blue);padding:8px 12px;border-radius:999px;font-weight:1000}
 /* Contact Section Reorder */
 .contact-grid{
   display: grid;
@@ -361,6 +362,7 @@ footer{
 }
 .whatsapp-button:hover{
   transform: scale(1.1);
+  color: var(--blue);
 }
 .whatsapp-button i{
   font-size: 2rem;
@@ -393,9 +395,9 @@ label{display:block;margin:0 0 6px;font-weight:600;color:var(--blue)}
 @media (max-width: 720px){
   .footer-grid{grid-template-columns:1fr}
   .slide{height:72vh}
-  .brand img {
-      height: 65px; 
-    }
+    .brand img {
+      height: 50px; 
+  }
 }
 
 .fa-cols {
