@@ -50,7 +50,8 @@ header{
   background:var(--white);
   box-shadow:0 2px 8px rgba(0,0,0,.06);
 }
-.nav{display:flex;align-items:center;justify-content:space
+.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+
 
 .brand{
   display: flex;
