@@ -170,3 +170,49 @@ window.addEventListener('load', () => {
     }
   }
 });
+
+/* --- WORD ROTATOR AUTO-PLAY LOGIC (HORIZONTAL SLIDE) --- */
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.word-rotator-area .word-slide');
+    let currentSlideIndex = 0;
+    const rotationInterval = 3000; // Time in milliseconds (3 seconds)
+
+    function rotateWord() {
+        // 1. Start the OUT animation for the current slide
+        const currentSlide = slides[currentSlideIndex];
+        currentSlide.classList.remove('active');
+        
+        // Use a short timeout to apply the 'out' transform while it's visible, then hide it.
+        currentSlide.style.transform = 'translateX(-100%)'; // Move out to the left
+        currentSlide.style.opacity = '0';
+
+        // 2. Determine the next slide index
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        const nextSlide = slides[currentSlideIndex];
+        
+        // 3. Prepare the next slide to enter from the right (reset its position and make it visible for the slide-in)
+        nextSlide.style.transform = 'translateX(100%)'; 
+        nextSlide.style.opacity = '0';
+        nextSlide.style.display = 'inline-block'; // Make it visible (but off-screen)
+        
+        // 4. Activate the next slide and trigger the slide-in animation
+        // We use a small delay to ensure the browser registers the position change (step 3)
+        setTimeout(() => {
+            currentSlide.style.display = 'none'; // Hide the old one completely
+            nextSlide.classList.add('active');
+            nextSlide.style.transform = 'translateX(0)'; // Slide into the center
+            nextSlide.style.opacity = '1';
+        }, 50); 
+    }
+
+    // Set a small initial delay before starting the rotation
+    setTimeout(() => {
+        // Ensure the first slide is positioned correctly before starting
+        slides[0].style.transform = 'translateX(0)';
+        slides[0].style.opacity = '1';
+        slides[0].style.display = 'inline-block';
+        
+        setInterval(rotateWord, rotationInterval);
+    }, rotationInterval); 
+});
+/* --- END WORD ROTATOR AUTO-PLAY LOGIC --- */
