@@ -50,8 +50,16 @@ header{
   background:var(--white);
   box-shadow:0 2px 8px rgba(0,0,0,.06);
 }
-.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-.brand{display:flex;align-items:center;gap:12px; padding: 10px;}
+.nav{display:flex;align-items:center;justify-content:space
+
+.brand{
+  display: flex;
+  flex-direction: column; /* CHANGE 1: Stack items vertically (logo then paragraph) */
+  align-items: flex-start; /* CHANGE 2: Align all content to the left (like the logo) */
+  gap: 2px; /* Reduce gap between logo and text */
+  padding: 10px;
+}
+     
 .brand img {
     height: 50px; /* Slightly smaller for better fit in a sticky header, but still prominent */
     max-height: 100px; /* Ensures it doesn't grow too large */
@@ -63,6 +71,24 @@ header{
 
 .brand h1{font-size:1.05rem;margin:0;font-weight:800;color:var(--blue)}
 /* Desktop nav menu - hidden on mobile */
+
+/* Style for the slogan under the logo - Separated and Highly Subdued */
+.brand p {
+    /* 1. SEPARATION: Add space above the slogan */
+    margin-top: 5px;             /* Push the slogan down 5px from the logo */
+    margin-bottom: 0;
+    padding: 0;
+
+    /* 2. CONTRAST: Use a smaller, thinner, and less intense style */
+    font-size: 0.6rem;           /* Use the smallest practical size */
+    font-weight: 400;            /* Lighter weight (regular/thin) */
+    color: var(--blue);
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.7;                /* SIGNIFICANT: Reduce opacity to soften the color intensity */
+}
+
 nav ul{
   display:none; /* Initially hidden for mobile-first approach */
   gap:18px;
@@ -180,6 +206,48 @@ nav a.cta{background:var(--yellow);color:#111;border-radius:12px}
 .btn{background:var(--yellow);color:var(--blue);}
 .btn:hover{background:var(--yellow-700)}
 
+/* --- NEW STYLES FOR AUTO-ROTATING *BUTTON-LIKE* WORDS (HORIZONTAL SLIDE) --- */
+
+/* Fix 1: Ensure container is left-aligned and doesn't affect background */
+.word-rotator-area {
+    position: relative;
+    min-height: 55px;
+    overflow: hidden;
+    margin: 20px 0 20px;
+    /* REMOVE: display: flex; align-items: center; justify-content: center; */
+    /* By removing the centering styles, it will left-align with the parent container (.slide-card) */
+}
+
+/* Fix 2: Change position strategy for the sliding words */
+.word-slide {
+    /* Keep these button styles */
+    padding: 12px 20px;
+    border: 2px solid var(--yellow);
+    border-radius: 12px;
+    font-size: clamp(20px, 4.4vw, 28px);
+    font-weight: 800;
+    color: var(--yellow);
+    background-color: rgba(255, 227, 46, 0.1);
+    
+    /* CRITICAL FIXES */
+    /* Change position from 'absolute' to 'relative' to respect content flow */
+    position: relative; 
+    
+    /* Ensure only the active one is shown and takes up space */
+    display: none; 
+    
+    /* Keep the smooth transition */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+/* Fix 3: Control the active slide to display it and set its animation position */
+.word-slide.active {
+    display: inline-block; /* Show it and allow it to take up space */
+    opacity: 1;
+    transform: translateX(0) !important; /* Ensure it's always visible when active */
+}
+
+/* --- END NEW STYLES --- */
 
   
 /* Tallies */
