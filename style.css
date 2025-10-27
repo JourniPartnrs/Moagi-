@@ -469,6 +469,37 @@ label{display:block;margin:0 0 6px;font-weight:600;color:var(--blue)}
   }
 }
 
+/* --- SLOGAN PLACEMENT ON HERO BACKGROUND --- */
+
+/* 1. Ensure the home page section is the reference point for absolute positioning */
+#home-page {
+    position: relative; 
+    /* The blue background is likely applied to #home-page or its container. */
+}
+
+/* 2. Style the wrapper to sit right at the top of the background area */
+.hero-slogan-background-area {
+    position: absolute; /* Positions it relative to #home-page */
+    top: 0;             /* Puts it right at the very top */
+    left: 0;
+    width: 100%;
+    padding-top: 20px;  /* Space it down from the top edge of the screen */
+    text-align: center; /* Center the text horizontally */
+    z-index: 10;        /* Ensure it sits above the main content card */
+}
+
+/* 3. Style the slogan text itself */
+.slogan-hero-bg-text {
+    font-size: 0.9rem;          /* Readable size, but not dominant */
+    font-weight: 700;
+    color: var(--white);        /* Use white or a very light yellow */
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
 .fa-cols {
   color: var(--yellow-700);
 }
