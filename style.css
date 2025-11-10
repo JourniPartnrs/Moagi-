@@ -280,7 +280,7 @@ section{padding:64px 0}
 #testimonials  {
   width: 100%;
   height: auto; /* Example height for the container */
-  background-image: url('img/deadline.jpg');
+  background-image: url('img/1.jpg');
   background-size: cover; /* Makes sure the image covers the entire element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
